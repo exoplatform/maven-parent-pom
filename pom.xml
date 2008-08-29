@@ -1,0 +1,38 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.exoplatform</groupId>
+  <artifactId>parent</artifactId>
+  <name>eXo parent POM</name>
+  <version>trunk</version>
+  <description>Provides default project configuration for eXo projects</description>
+  <packaging>pom</packaging>
+
+  <organization>
+    <name>eXo Platform SAS</name>
+    <url>http://www.exoplatform.com</url>
+  </organization>
+
+  <build>
+     <plugins>
+     
+     	<!-- This plugins triggers the generation of a jar containing the source code when the
+     	     jar phase is executed -->  
+        <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-source-plugin</artifactId>
+           <version>2.0.3</version>
+           <inherited>true</inherited>
+           <executions>
+              <execution>
+                 <id>attach-sources</id>
+                 <goals>
+                    <goal>jar</goal>
+                 </goals>
+              </execution>
+           </executions>
+        </plugin>
+
+     </plugins>
+  </build>
+
+</project>
