@@ -3,7 +3,7 @@
   <groupId>org.exoplatform</groupId>
   <artifactId>parent</artifactId>
   <name>eXo parent POM</name>
-  <version>trunk</version>
+  <version>1.0.0-rc1</version>
   <description>Provides default project configuration for eXo projects</description>
   <packaging>pom</packaging>
 
