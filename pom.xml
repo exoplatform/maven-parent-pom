@@ -1,17 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>org.exoplatform</groupId>
   <artifactId>parent</artifactId>
-  <name>eXo parent POM</name>
   <version>1.2</version>
-  <description>Provides default project configuration for eXo projects</description>
   <packaging>pom</packaging>
+
+  <name>eXo parent POM</name>
+  <description>Provides default project configuration for eXo projects</description>
+  <url>http://www.exoplatform.com</url>
 
   <organization>
     <name>eXo Platform SAS</name>
     <url>http://www.exoplatform.com</url>
   </organization>
 
+  <licenses>
+    <license>
+      <name>agpl</name>
+      <url>http://www.gnu.org/licenses/agpl-3.0.txt</url>
+    </license>
+  </licenses>
+  
   <scm>
     <connection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/1.2</connection>
     <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/1.2</developerConnection>
