@@ -3,7 +3,7 @@
 
   <groupId>org.exoplatform</groupId>
   <artifactId>parent</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
   <packaging>pom</packaging>
 
   <name>eXo parent POM</name>
@@ -23,9 +23,9 @@
   </licenses>
   
   <scm>
-    <connection>scm:svn:http://svn.exoplatform.org/projects/parent/branches/1.x</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/branches/1.x</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/parent/branches/1.x</url>
+    <connection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/1.2</connection>
+    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/1.2</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/parent/tags/1.2</url>
   </scm>
 
   <distributionManagement>
