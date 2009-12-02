@@ -20,15 +20,23 @@
 
   <distributionManagement>
     <repository>
-     <id>exo-releases</id>
-     <name>exo releases</name>
-     <url>http://archiva.exoplatform.org/archiva/repository/exo-releases</url>
+      <id>repository.exoplatform.org</id>
+      <url>${exo.releases.repo.url}</url>
     </repository>
+    <snapshotRepository>
+      <id>repository.exoplatform.org</id>
+      <url>${exo.snapshots.repo.url}</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <properties>
      <exo.product.name>eXo Platform</exo.product.name>
      <exo.product.specification>N/A</exo.product.specification>
+    <!-- ***************** -->
+    <!-- Repositories URLs -->
+    <!-- ***************** -->
+    <exo.releases.repo.url>http://repository.exoplatform.org/content/repositories/exo-releases</exo.releases.repo.url>
+    <exo.snapshots.repo.url>http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
   </properties>
 
 
