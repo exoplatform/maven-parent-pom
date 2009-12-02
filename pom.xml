@@ -35,7 +35,7 @@
     <!-- ***************** -->
     <!-- Repositories URLs -->
     <!-- ***************** -->
-    <exo.releases.repo.url>http://repository.exoplatform.org/content/repositories/exo-releases</exo.releases.repo.url>
+    <exo.releases.repo.url>http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
     <exo.snapshots.repo.url>http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
   </properties>
 
