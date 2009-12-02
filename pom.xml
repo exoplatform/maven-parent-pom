@@ -108,7 +108,6 @@
           <arguments>-Dmaven.test.skip=true</arguments>
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <!-- allowTimestampedSnapshots>true</allowTimestampedSnapshots - Should not be released with SNAPSHOTs-->
-          <goals>install</goals>
         </configuration>
       </plugin>
 
