@@ -1,43 +1,36 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>org.exoplatform</groupId>
   <artifactId>exo.parent</artifactId>
   <version>4-SNAPSHOT</version>
   <packaging>pom</packaging>
-
   <name>eXo parent POM</name>
   <description>Provides default project configuration for eXo projects</description>
   <url>http://www.exoplatform.com</url>
-
   <organization>
     <name>eXo Platform SAS</name>
     <url>http://www.exoplatform.com</url>
   </organization>
-
   <licenses>
     <license>
       <name>agpl</name>
       <url>http://www.gnu.org/licenses/agpl-3.0.txt</url>
     </license>
   </licenses>
-
   <issueManagement>
     <system>jira</system>
     <url>http://jira.exoplatform.org/</url>
   </issueManagement>
-
   <ciManagement>
     <system>hudson</system>
     <url>http://builder.exoplatform.org/hudson</url>
   </ciManagement>
-
   <scm>
     <connection>scm:svn:http://svn.exoplatform.org/projects/parent/trunk</connection>
     <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/trunk</developerConnection>
     <url>http://fisheye.exoplatform.org/browse/projects/parent/trunk</url>
   </scm>
-
   <distributionManagement>
     <repository>
       <id>repository.exoplatform.org</id>
@@ -48,12 +41,9 @@
       <url>${exo.snapshots.repo.url}</url>
     </snapshotRepository>
   </distributionManagement>
-
   <properties>
-
     <exo.product.name>eXo Platform</exo.product.name>
     <exo.product.specification>N/A</exo.product.specification>
-
     <!-- **************** -->
     <!-- Plugins versions -->
     <!-- **************** -->
@@ -81,7 +71,8 @@
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.jdepend.plugin>2.0-beta-2</version.jdepend.plugin>
     <version.jxr.plugin>2.1</version.jxr.plugin>
-    <version.pir.plugin>2.1.2</version.pir.plugin><!-- maven-project-info-reports-plugins -->
+    <version.pir.plugin>2.1.2</version.pir.plugin>
+    <!-- maven-project-info-reports-plugins -->
     <version.plugin.plugin>2.5.1</version.plugin.plugin>
     <version.pmd.plugin>2.4</version.pmd.plugin>
     <version.rar.plugin>2.2</version.rar.plugin>
@@ -94,46 +85,35 @@
     <version.taglist.plugin>2.4</version.taglist.plugin>
     <version.versions.plugin>1.1</version.versions.plugin>
     <version.war.plugin>2.1-beta-1</version.war.plugin>
-
     <!-- ***************** -->
     <!-- Repositories URLs -->
     <!-- ***************** -->
     <exo.releases.repo.url>http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
     <exo.snapshots.repo.url>http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
-
     <!-- ************** -->
     <!-- Build settings -->
     <!-- ************** -->
-
     <!-- Cross plugins settings -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
     <!-- maven-compiler-plugin -->
     <maven.compiler.target>1.5</maven.compiler.target>
     <maven.compiler.source>1.5</maven.compiler.source>
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.optimize>true</maven.compiler.optimize>
-
     <!-- maven-enforcer-plugin -->
     <maven.min.version>2.2.1</maven.min.version>
     <jdk.min.version>${maven.compiler.source}</jdk.min.version>
-
     <!-- maven-idea-plugin & maven-eclipse-plugin -->
     <downloadSources>true</downloadSources>
-
     <!-- maven-pmd-plugin -->
     <targetJdk>${maven.compiler.target}</targetJdk>
-
     <!-- maven-release-plugin -->
     <useReleaseProfile>false</useReleaseProfile>
     <arguments>-Prelease</arguments>
     <autoVersionSubmodules>true</autoVersionSubmodules>
-
   </properties>
-
   <build>
-
     <pluginManagement>
       <!-- All plugins ordered by shortname (antrun, assembly ...) -->
       <plugins>
@@ -383,7 +363,6 @@
       </plugins>
     </pluginManagement>
   </build>
-
   <reporting>
     <plugins>
       <plugin>
@@ -408,9 +387,7 @@
       </plugin>
     </plugins>
   </reporting>
-
   <profiles>
-
     <profile>
       <id>enforce</id>
       <activation>
@@ -473,7 +450,6 @@
         </plugins>
       </build>
     </profile>
-
     <profile>
       <id>sources</id>
       <activation>
@@ -499,7 +475,6 @@
         </plugins>
       </build>
     </profile>
-
     <!-- This profile is activated when a project is released. -->
     <profile>
       <id>release</id>
@@ -575,7 +550,5 @@
         </plugins>
       </build>
     </profile>
-
   </profiles>
-
 </project>
