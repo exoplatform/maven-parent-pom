@@ -531,9 +531,9 @@
             <artifactId>maven-javadoc-plugin</artifactId>
             <executions>
               <execution>
-                <id>aggregate</id>
+                <id>attach-javadocs</id>
                 <goals>
-                  <goal>aggregate-jar</goal>
+                  <goal>jar</goal>
                 </goals>
               </execution>
             </executions>
