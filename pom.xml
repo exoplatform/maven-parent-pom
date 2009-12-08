@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.exoplatform</groupId>
   <artifactId>exo.parent</artifactId>
-  <version>6-SNAPSHOT</version>
+  <version>6</version>
   <packaging>pom</packaging>
   <name>eXo parent POM</name>
   <description>Provides default project configuration for eXo projects</description>
@@ -27,9 +27,9 @@
     <url>http://builder.exoplatform.org/hudson</url>
   </ciManagement>
   <scm>
-    <connection>scm:svn:http://svn.exoplatform.org/projects/parent/trunk</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/trunk</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/parent/trunk</url>
+    <connection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/6</connection>
+    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/6</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/parent/tags/6</url>
   </scm>
   <distributionManagement>
     <repository>
