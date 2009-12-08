@@ -68,7 +68,7 @@
     <version.idea.plugin>2.2</version.idea.plugin>
     <version.install.plugin>2.3</version.install.plugin>
     <version.jar.plugin>2.3</version.jar.plugin>
-    <version.javadoc.plugin>2.5</version.javadoc.plugin>
+    <version.javadoc.plugin>2.6.1</version.javadoc.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.jdepend.plugin>2.0-beta-2</version.jdepend.plugin>
     <version.jxr.plugin>2.1</version.jxr.plugin>
@@ -532,9 +532,9 @@
             <artifactId>maven-javadoc-plugin</artifactId>
             <executions>
               <execution>
-                <id>attach-javadocs</id>
+                <id>aggregate</id>
                 <goals>
-                  <goal>jar</goal>
+                  <goal>aggregate-jar</goal>
                 </goals>
               </execution>
             </executions>
