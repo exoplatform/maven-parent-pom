@@ -185,7 +185,7 @@
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               </manifest>
               <manifestEntries>
-                <Implementation-URL>${pom.url}</Implementation-URL>
+                <Implementation-URL>${project.url}</Implementation-URL>
                 <SCM-URL>${project.scm.connection}</SCM-URL>
                 <Specification-Title>${exo.product.name}</Specification-Title>
                 <Specification-Version>${exo.product.specification}</Specification-Version>
@@ -248,7 +248,7 @@
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               </manifest>
               <manifestEntries>
-                <Implementation-URL>${pom.url}</Implementation-URL>
+                <Implementation-URL>${project.url}</Implementation-URL>
                 <SCM-URL>${project.scm.connection}</SCM-URL>
                 <Specification-Title>${exo.product.name}</Specification-Title>
                 <Specification-Version>${exo.product.specification}</Specification-Version>
@@ -355,7 +355,7 @@
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               </manifest>
               <manifestEntries>
-                <Implementation-URL>${pom.url}</Implementation-URL>
+                <Implementation-URL>${project.url}</Implementation-URL>
                 <SCM-URL>${project.scm.connection}</SCM-URL>
                 <Specification-Title>${exo.product.name}</Specification-Title>
                 <Specification-Version>${exo.product.specification}</Specification-Version>
