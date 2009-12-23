@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.exoplatform</groupId>
   <artifactId>exo.parent</artifactId>
-  <version>7-SNAPSHOT</version>
+  <version>7</version>
   <packaging>pom</packaging>
   <name>eXo parent POM</name>
   <description>Provides default project configuration for eXo projects</description>
@@ -27,9 +27,9 @@
     <url>http://builder.exoplatform.org/hudson</url>
   </ciManagement>
   <scm>
-    <connection>scm:svn:http://svn.exoplatform.org/projects/parent/trunk</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/trunk</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/parent/trunk</url>
+    <connection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/7</connection>
+    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/7</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/parent/tags/7</url>
   </scm>
   <distributionManagement>
     <repository>
@@ -505,7 +505,6 @@
               <artifactId>maven-javadoc-plugin</artifactId>
               <configuration>
                 <archive>
-                  <!-- Additional entries in Manifest -->
                   <manifestEntries>
                     <SCM-Revision>${buildNumber}</SCM-Revision>
                   </manifestEntries>
@@ -527,18 +526,6 @@
           </plugins>
         </pluginManagement>
         <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>aggregate</id>
-                <goals>
-                  <goal>aggregate-jar</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>buildnumber-maven-plugin</artifactId>
