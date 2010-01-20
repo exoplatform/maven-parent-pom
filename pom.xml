@@ -361,7 +361,7 @@
     <version.site.plugin>2.0.1</version.site.plugin>
     <version.sonar.plugin>1.0-beta-1</version.sonar.plugin>
     <version.source.plugin>2.1.1</version.source.plugin>
-    <version.surefire.plugin>2.4.3</version.surefire.plugin>
+    <version.surefire.plugin>2.5</version.surefire.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
     <version.versions.plugin>1.1</version.versions.plugin>
     <version.war.plugin>2.1-beta-1</version.war.plugin>
