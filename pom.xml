@@ -334,7 +334,7 @@
     <version.checkstyle.plugin>2.4</version.checkstyle.plugin>
     <version.clover2.plugin>2.6.3</version.clover2.plugin>
     <version.cobertura.plugin>2.3</version.cobertura.plugin>
-    <version.compiler.plugin>2.0.2</version.compiler.plugin>
+    <version.compiler.plugin>2.1</version.compiler.plugin>
     <version.dependency.plugin>2.1</version.dependency.plugin>
     <version.deploy.plugin>2.5</version.deploy.plugin>
     <version.eclipse.plugin>2.7</version.eclipse.plugin>
