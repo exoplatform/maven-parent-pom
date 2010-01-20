@@ -367,6 +367,7 @@
     <version.javadoc.plugin>2.6.1</version.javadoc.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.jdepend.plugin>2.0-beta-2</version.jdepend.plugin>
+    <!--  Upgrading JIBX doesn't work for JCR (at least without modifying the project)-->
     <version.jibx.plugin>1.1.6a</version.jibx.plugin>
     <version.jxr.plugin>2.1</version.jxr.plugin>
     <version.pir.plugin>2.1.2</version.pir.plugin>
