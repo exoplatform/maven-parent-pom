@@ -199,6 +199,11 @@
           <version>${version.jdepend.plugin}</version>
         </plugin>
         <plugin>
+          <groupId>org.jibx</groupId>
+          <artifactId>maven-jibx-plugin</artifactId>
+          <version>${version.jibx.plugin}</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jxr-plugin</artifactId>
           <version>${version.jxr.plugin}</version>
@@ -350,6 +355,7 @@
     <version.javadoc.plugin>2.6.1</version.javadoc.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.jdepend.plugin>2.0-beta-2</version.jdepend.plugin>
+    <version.jibx.plugin>1.1.6a</version.jibx.plugin>
     <version.jxr.plugin>2.1</version.jxr.plugin>
     <version.pir.plugin>2.1.2</version.pir.plugin>
     <!-- maven-project-info-reports-plugins -->
