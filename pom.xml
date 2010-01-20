@@ -134,6 +134,11 @@
           <version>${version.exec.plugin}</version>
         </plugin>
         <plugin>
+          <groupId>org.exoplatform.maven.plugins</groupId>
+          <artifactId>maven-exobuild-plugin</artifactId>
+          <version>${version.exobuild.plugin}</version>
+        </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>failsafe-maven-plugin</artifactId>
           <version>${version.failsafe.plugin}</version>
@@ -347,6 +352,7 @@
     <version.ejb.plugin>2.2</version.ejb.plugin>
     <version.enforcer.plugin>1.0-beta-1</version.enforcer.plugin>
     <version.exec.plugin>1.1.1</version.exec.plugin>
+    <version.exobuild.plugin>1.2.0</version.exobuild.plugin>
     <version.failsafe.plugin>2.4.3-alpha-1</version.failsafe.plugin>
     <version.findbugs.plugin>2.3</version.findbugs.plugin>
     <version.idea.plugin>2.2</version.idea.plugin>
