@@ -395,8 +395,6 @@
     <!-- Cross plugins settings -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- maven-clover2-plugin -->
-    <!-- required when we generate sources - javacc, ... -->
-    <maven.clover.includesAllSourceRoots>true</maven.clover.includesAllSourceRoots>
     <!-- where snapshots are stored to use clover optimization -->
     <maven.clover.snapshot>${user.home}/.clover/${groupId}-${artifactId}/clover.snapshot</maven.clover.snapshot>
     <!-- where historical data are stored -->
