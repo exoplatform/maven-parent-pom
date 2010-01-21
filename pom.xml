@@ -433,22 +433,6 @@
             <artifactId>maven-enforcer-plugin</artifactId>
             <executions>
               <execution>
-                <id>enforce-plugin-versions</id>
-                <goals>
-                  <goal>enforce</goal>
-                </goals>
-                <configuration>
-                  <rules>
-                    <requirePluginVersions>
-                      <message>Best practice is to always define plugin versions!</message>
-                      <banLatest>true</banLatest>
-                      <banRelease>true</banRelease>
-                      <phases>deploy,site</phases>
-                    </requirePluginVersions>
-                  </rules>
-                </configuration>
-              </execution>
-              <execution>
                 <id>enforce-java-version</id>
                 <goals>
                   <goal>enforce</goal>
@@ -562,6 +546,28 @@
                 <goals>
                   <goal>create</goal>
                 </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>enforce-plugin-versions</id>
+                <goals>
+                  <goal>enforce</goal>
+                </goals>
+                <configuration>
+                  <rules>
+                    <requirePluginVersions>
+                      <message>Best practice is to always define plugin versions!</message>
+                      <banLatest>true</banLatest>
+                      <banRelease>true</banRelease>
+                      <phases>deploy,site</phases>
+                    </requirePluginVersions>
+                  </rules>
+                </configuration>
               </execution>
             </executions>
           </plugin>
