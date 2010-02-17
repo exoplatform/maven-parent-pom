@@ -110,6 +110,10 @@
     <version.taglist.plugin>2.4</version.taglist.plugin>
     <version.versions.plugin>1.1</version.versions.plugin>
     <version.war.plugin>2.1-beta-1</version.war.plugin>
+    <!-- *************** -->
+    <!-- Others versions -->
+    <!-- *************** -->
+    <version.animal-sniffer.enforcer-rule>1.5</version.animal-sniffer.enforcer-rule>
     <!-- ***************** -->
     <!-- Repositories URLs -->
     <!-- ***************** -->
@@ -136,6 +140,10 @@
     <!-- maven-enforcer-plugin -->
     <maven.min.version>2.2.1</maven.min.version>
     <jdk.min.version>${maven.compiler.source}</jdk.min.version>
+    <!-- To configure animal-sniffer to check API compat -->
+    <animal-sniffer.signature.groupId>org.codehaus.mojo.signature</animal-sniffer.signature.groupId>
+    <animal-sniffer.signature.artifactId>java15</animal-sniffer.signature.artifactId>
+    <animal-sniffer.signature.version>1.0</animal-sniffer.signature.version>
     <!-- maven-idea-plugin & maven-eclipse-plugin -->
     <downloadSources>true</downloadSources>
     <!--  maven-javadoc-plugin -->
@@ -427,6 +435,18 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.maven.ide.eclipse</groupId>
+        <artifactId>lifecycle-mapping</artifactId>
+        <version>0.9.9-SNAPSHOT</version>
+        <configuration>
+          <mappingId>generic</mappingId>
+          <configurators/>
+          <mojoExecutions/>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
   <profiles>
     <profile>
@@ -562,6 +582,13 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-enforcer-plugin</artifactId>
+            <dependencies>
+              <dependency>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>animal-sniffer-enforcer-rule</artifactId>
+                <version>${version.animal-sniffer.enforcer-rule}</version>
+              </dependency>
+            </dependencies>
             <executions>
               <execution>
                 <id>enforce-plugin-versions</id>
@@ -576,6 +603,23 @@
                       <banRelease>true</banRelease>
                       <phases>deploy,site</phases>
                     </requirePluginVersions>
+                  </rules>
+                </configuration>
+              </execution>
+              <execution>
+                <id>check-java15</id>
+                <goals>
+                  <goal>enforce</goal>
+                </goals>
+                <configuration>
+                  <rules>
+                    <checkSignatureRule implementation="org.codehaus.mojo.animal_sniffer.enforcer.CheckSignatureRule">
+                      <signature>
+                        <groupId>${animal-sniffer.signature.groupId}</groupId>
+                        <artifactId>${animal-sniffer.signature.artifactId}</artifactId>
+                        <version>${animal-sniffer.signatureversion.}</version>
+                      </signature>
+                    </checkSignatureRule>
                   </rules>
                 </configuration>
               </execution>
