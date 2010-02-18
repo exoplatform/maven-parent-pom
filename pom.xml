@@ -605,7 +605,7 @@
                       <signature>
                         <groupId>${animal-sniffer.signature.groupId}</groupId>
                         <artifactId>${animal-sniffer.signature.artifactId}</artifactId>
-                        <version>${animal-sniffer.signatureversion.}</version>
+                        <version>${animal-sniffer.signature.version}</version>
                       </signature>
                     </checkSignatureRule>
                   </rules>
