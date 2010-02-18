@@ -90,7 +90,7 @@
     <version.install.plugin>2.3</version.install.plugin>
     <version.jar.plugin>2.3</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
-    <version.javadoc.plugin>2.6.1</version.javadoc.plugin>
+    <version.javadoc.plugin>2.5</version.javadoc.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.jdepend.plugin>2.0-beta-2</version.jdepend.plugin>
     <!--  Upgrading JIBX doesn't work for JCR (at least without modifying the project)-->
