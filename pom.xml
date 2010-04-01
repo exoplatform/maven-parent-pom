@@ -334,8 +334,20 @@
           <configuration>
             <archive>
               <manifest>
+                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               </manifest>
+              <manifestEntries>
+                <Date>${maven.build.timestamp}</Date>
+                <Implementation-URL>${project.url}</Implementation-URL>
+                <SCM-URL>${project.scm.connection}</SCM-URL>
+                <Specification-Title>${exo.product.name}</Specification-Title>
+                <Specification-Version>${exo.product.specification}</Specification-Version>
+                <Specification-Vendor>${project.organization.name}</Specification-Vendor>
+                <Implementation-Title>${project.name}</Implementation-Title>
+                <Implementation-Version>${project.version}</Implementation-Version>
+                <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
+              </manifestEntries>
             </archive>
           </configuration>
         </plugin>
@@ -401,8 +413,20 @@
           <configuration>
             <archive>
               <manifest>
+                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               </manifest>
+              <manifestEntries>
+                <Date>${maven.build.timestamp}</Date>
+                <Implementation-URL>${project.url}</Implementation-URL>
+                <SCM-URL>${project.scm.connection}</SCM-URL>
+                <Specification-Title>${exo.product.name}</Specification-Title>
+                <Specification-Version>${exo.product.specification}</Specification-Version>
+                <Specification-Vendor>${project.organization.name}</Specification-Vendor>
+                <Implementation-Title>${project.name}</Implementation-Title>
+                <Implementation-Version>${project.version}</Implementation-Version>
+                <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
+              </manifestEntries>
             </archive>
           </configuration>
         </plugin>
@@ -523,6 +547,18 @@
           <plugins>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-ear-plugin</artifactId>
+              <configuration>
+                <archive>
+                  <!-- Additional entries in Manifest -->
+                  <manifestEntries>
+                    <SCM-Revision>${buildNumber}</SCM-Revision>
+                  </manifestEntries>
+                </archive>
+              </configuration>
+            </plugin>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-jar-plugin</artifactId>
               <configuration>
                 <archive>
@@ -547,6 +583,18 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-source-plugin</artifactId>
+              <configuration>
+                <archive>
+                  <!-- Additional entries in Manifest -->
+                  <manifestEntries>
+                    <SCM-Revision>${buildNumber}</SCM-Revision>
+                  </manifestEntries>
+                </archive>
+              </configuration>
+            </plugin>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-war-plugin</artifactId>
               <configuration>
                 <archive>
                   <!-- Additional entries in Manifest -->
