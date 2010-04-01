@@ -73,7 +73,7 @@
     <version.clean.plugin>2.4</version.clean.plugin>
     <version.checkstyle.plugin>2.5</version.checkstyle.plugin>
     <version.clirr.plugin>2.2.2</version.clirr.plugin>
-    <version.clover2.plugin>2.6.3</version.clover2.plugin>
+    <version.clover2.plugin>3.0.1</version.clover2.plugin>
     <version.cobertura.plugin>2.3</version.cobertura.plugin>
     <version.compiler.plugin>2.1</version.compiler.plugin>
     <version.dependency.plugin>2.1</version.dependency.plugin>
