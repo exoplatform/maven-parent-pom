@@ -155,10 +155,10 @@
     <!-- maven-pmd-plugin -->
     <targetJdk>${maven.compiler.target}</targetJdk>
     <!-- maven-release-plugin -->
-    <preparationGoals>clean install</preparationGoals>
     <useReleaseProfile>false</useReleaseProfile>
-    <arguments>-Prelease</arguments>
     <autoVersionSubmodules>true</autoVersionSubmodules>
+    <defaulteXoReleaseProfiles>release</defaulteXoReleaseProfiles>
+    <releaseProfiles>${defaulteXoReleaseProfiles}</releaseProfiles>
   </properties>
   <build>
     <pluginManagement>
