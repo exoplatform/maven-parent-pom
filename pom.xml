@@ -120,6 +120,7 @@
     <!-- ***************** -->
     <exo.releases.repo.url>http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
     <exo.snapshots.repo.url>http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
+    <exo.public.repo.url>http://repository.exoplatform.org/public/</exo.public.repo.url>
     <!-- ************** -->
     <!-- Build settings -->
     <!-- ************** -->
@@ -138,6 +139,8 @@
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.optimize>true</maven.compiler.optimize>
+    <!-- maven-dependency-plugin -->
+    <repoUrl>${exo.public.repo.url}</repoUrl>
     <!-- maven-enforcer-plugin -->
     <maven.min.version>2.2.1</maven.min.version>
     <jdk.min.version>${maven.compiler.source}</jdk.min.version>
