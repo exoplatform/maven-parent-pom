@@ -129,6 +129,7 @@
     <!-- ************** -->
     <!-- Cross plugins settings -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <!-- maven-clover2-plugin -->
     <!-- where snapshots are stored to use clover optimization -->
     <maven.clover.snapshot>${user.home}/.clover/${project.groupId}-${project.artifactId}/clover.snapshot</maven.clover.snapshot>
