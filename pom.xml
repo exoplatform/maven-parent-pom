@@ -386,7 +386,7 @@
           <version>${version.jxr.plugin}</version>
         </plugin>
         <plugin>
-          <groupId>org.codehaus.mojo</groupId>
+          <groupId>org.codehaus.plexus</groupId>
           <artifactId>plexus-maven-plugin</artifactId>
           <version>${version.plexus.plugin}</version>
         </plugin>
