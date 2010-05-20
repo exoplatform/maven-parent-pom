@@ -25,7 +25,7 @@
   <packaging>pom</packaging>
   <name>eXo parent POM</name>
   <description>Provides default project configuration for eXo projects</description>
-  <url>http://www.exoplatform.com</url>
+  <url>${exo.sites.url}</url>
   <licenses>
     <license>
       <name>agpl</name>
@@ -58,6 +58,10 @@
       <id>repository.exoplatform.org</id>
       <url>${exo.snapshots.repo.url}</url>
     </snapshotRepository>
+    <site>
+      <id>sites.exoplatform.org</id>
+      <url>${exo.sites.deploy.url}</url>
+    </site>
   </distributionManagement>
   <properties>
     <exo.product.name>eXo Platform</exo.product.name>
@@ -124,6 +128,8 @@
     <exo.releases.repo.url>http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
     <exo.snapshots.repo.url>http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
     <exo.public.repo.url>http://repository.exoplatform.org/public/</exo.public.repo.url>
+    <exo.sites.deploy.url>file://${user.home}/.exo/sites</exo.sites.deploy.url>
+    <exo.sites.url>http://sites.exoplatform.org</exo.sites.url>
     <!-- ************** -->
     <!-- Build settings -->
     <!-- ************** -->
