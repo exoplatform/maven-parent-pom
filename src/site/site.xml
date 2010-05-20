@@ -37,6 +37,7 @@
     <!-- Breadcrumbs that every project will inherit -->
     <breadcrumbs>
       <item name="eXo Platform" href="http://www.exoplatform.com/"/>
+      <item name="Maven sites" href="http://sites.exoplatform.org/"/>
     </breadcrumbs>
 
     <!-- Menus that every project will inherit -->
