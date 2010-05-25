@@ -88,7 +88,7 @@
     <version.ejb.plugin>2.2.1</version.ejb.plugin>
     <version.enforcer.plugin>1.0-beta-1</version.enforcer.plugin>
     <version.exec.plugin>1.1.1</version.exec.plugin>
-    <version.exobuild.plugin>1.2.1</version.exobuild.plugin>
+    <version.exobuild.plugin>1.2.2</version.exobuild.plugin>
     <version.exopc.plugin>1.0.5</version.exopc.plugin>
     <version.failsafe.plugin>2.5</version.failsafe.plugin>
     <version.findbugs.plugin>2.3.1</version.findbugs.plugin>
