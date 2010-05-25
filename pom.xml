@@ -64,7 +64,7 @@
     </site>
   </distributionManagement>
   <properties>
-    <exo.product.name>eXo Platform</exo.product.name>
+    <exo.product.name>${project.name}</exo.product.name>
     <exo.product.specification>N/A</exo.product.specification>
     <!-- **************** -->
     <!-- Plugins versions -->
