@@ -95,7 +95,7 @@
     <version.idea.plugin>2.2</version.idea.plugin>
     <version.install.plugin>2.3</version.install.plugin>
     <version.invoker.plugin>1.5</version.invoker.plugin>
-    <version.jar.plugin>2.3</version.jar.plugin>
+    <version.jar.plugin>2.3.1</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
     <version.javadoc.plugin>2.7</version.javadoc.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
