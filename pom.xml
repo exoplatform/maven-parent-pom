@@ -65,8 +65,6 @@
   </distributionManagement>
   <properties>
     <exo.product.name>${project.name}</exo.product.name>
-    <exo.product.specification>N/A</exo.product.specification>
-    <exo.product.scm.revision>N/A</exo.product.scm.revision>
     <!-- **************** -->
     <!-- Plugins versions -->
     <!-- **************** -->
@@ -159,6 +157,8 @@
     <animal-sniffer.signature.groupId>org.codehaus.mojo.signature</animal-sniffer.signature.groupId>
     <animal-sniffer.signature.artifactId>java15</animal-sniffer.signature.artifactId>
     <animal-sniffer.signature.version>1.0</animal-sniffer.signature.version>
+    <!-- The version of maven-scm-provider-svnjava to use -->
+    <maven-scm-provider-svnjava.version>1.10.1</maven-scm-provider-svnjava.version>
     <!-- maven-idea-plugin & maven-eclipse-plugin -->
     <downloadSources>true</downloadSources>
     <!--  maven-javadoc-plugin -->
@@ -256,7 +256,7 @@
                 <SCM-URL>${project.scm.connection}</SCM-URL>
                 <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
-                <Specification-Version>${exo.product.specification}</Specification-Version>
+                <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
                 <Implementation-Title>${project.name}</Implementation-Title>
                 <Implementation-Version>${project.version}</Implementation-Version>
@@ -286,7 +286,7 @@
                 <SCM-URL>${project.scm.connection}</SCM-URL>
                 <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
-                <Specification-Version>${exo.product.specification}</Specification-Version>
+                <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
                 <Implementation-Title>${project.name}</Implementation-Title>
                 <Implementation-Version>${project.version}</Implementation-Version>
@@ -356,7 +356,7 @@
                 <SCM-URL>${project.scm.connection}</SCM-URL>
                 <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
-                <Specification-Version>${exo.product.specification}</Specification-Version>
+                <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
                 <Implementation-Title>${project.name}</Implementation-Title>
                 <Implementation-Version>${project.version}</Implementation-Version>
@@ -386,7 +386,7 @@
                 <SCM-URL>${project.scm.connection}</SCM-URL>
                 <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
-                <Specification-Version>${exo.product.specification}</Specification-Version>
+                <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
                 <Implementation-Title>${project.name}</Implementation-Title>
                 <Implementation-Version>${project.version}</Implementation-Version>
@@ -471,7 +471,7 @@
                 <SCM-URL>${project.scm.connection}</SCM-URL>
                 <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
-                <Specification-Version>${exo.product.specification}</Specification-Version>
+                <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
                 <Implementation-Title>${project.name}</Implementation-Title>
                 <Implementation-Version>${project.version}</Implementation-Version>
@@ -506,7 +506,7 @@
                 <SCM-URL>${project.scm.connection}</SCM-URL>
                 <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
-                <Specification-Version>${exo.product.specification}</Specification-Version>
+                <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
                 <Implementation-Title>${project.name}</Implementation-Title>
                 <Implementation-Version>${project.version}</Implementation-Version>
@@ -520,25 +520,33 @@
     <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
-        <artifactId>buildnumber-maven-plugin</artifactId>
+        <artifactId>build-helper-maven-plugin</artifactId>
         <executions>
           <execution>
-            <id>generate-specification-version</id>
-            <phase>initialize</phase>
+            <id>parse-version</id>
+            <phase>prepare-package</phase>
             <goals>
-              <goal>create</goal>
+              <goal>parse-version</goal>
             </goals>
-            <configuration>
-              <format>{0,number}.{1,number}</format>
-              <items>
-                <item>buildNumber0</item>
-                <item>buildNumber1</item>
-              </items>
-              <buildNumberPropertyName>exo.product.specification</buildNumberPropertyName>
-            </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin>      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <providerImplementations>
+            <svn>javasvn</svn>
+          </providerImplementations>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
+            <artifactId>maven-scm-provider-svnjava</artifactId>
+            <version>${maven-scm-provider-svnjava.version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>      
     </plugins>
   </build>
   <profiles>
@@ -624,18 +632,27 @@
             <executions>
               <execution>
                 <id>generate-scm-revision</id>
-                <phase>initialize</phase>
+                <phase>prepare-package</phase>
                 <goals>
                   <goal>create</goal>
                 </goals>
                 <configuration>
+                  <buildNumberPropertyName>exo.product.scm.revision</buildNumberPropertyName>
                   <revisionOnScmFailure>no_revision</revisionOnScmFailure>
+                  <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
                   <providerImplementations>
                     <svn>javasvn</svn>
                   </providerImplementations>
                 </configuration>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
+                <artifactId>maven-scm-provider-svnjava</artifactId>
+                <version>${maven-scm-provider-svnjava.version}</version>
+              </dependency>
+            </dependencies>
           </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
