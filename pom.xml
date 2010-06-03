@@ -91,6 +91,7 @@
     <version.exopc.plugin>1.0.5</version.exopc.plugin>
     <version.failsafe.plugin>2.5</version.failsafe.plugin>
     <version.findbugs.plugin>2.3.1</version.findbugs.plugin>
+    <version.gpg.plugin>1.1</version.gpg.plugin>
     <version.idea.plugin>2.2</version.idea.plugin>
     <version.install.plugin>2.3.1</version.install.plugin>
     <version.invoker.plugin>1.5</version.invoker.plugin>
@@ -324,6 +325,11 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>findbugs-maven-plugin</artifactId>
           <version>${version.findbugs.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>${version.gpg.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
