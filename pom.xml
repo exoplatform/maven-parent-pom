@@ -122,11 +122,13 @@
     <!-- Others versions -->
     <!-- *************** -->
     <version.animal-sniffer.enforcer-rule>1.5</version.animal-sniffer.enforcer-rule>
-    <!-- ***************** -->
-    <!-- Repositories URLs -->
-    <!-- ***************** -->
-    <exo.releases.repo.url>http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
-    <exo.snapshots.repo.url>http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
+    <version.wagon-webdav-jackrabbit>1.0-beta-7</version.wagon-webdav-jackrabbit>
+    <!-- **************************************** -->
+    <!-- Repositories URLs                        -->
+    <!-- Using DAV for large artifacts - PAR-156  -->
+    <!-- **************************************** -->
+    <exo.releases.repo.url>dav:http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
+    <exo.snapshots.repo.url>dav:http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
     <exo.public.repo.url>http://repository.exoplatform.org/public/</exo.public.repo.url>
     <exo.sites.deploy.url>file://${user.home}/.exo/sites</exo.sites.deploy.url>
     <exo.sites.url>http://sites.exoplatform.org</exo.sites.url>
@@ -163,7 +165,7 @@
     <!-- maven-idea-plugin & maven-eclipse-plugin -->
     <downloadSources>true</downloadSources>
     <!--  maven-javadoc-plugin -->
-    <detectOfflineLinks>false</detectOfflineLinks> <!-- too slow : http://jira.codehaus.org/browse/MJAVADOC-268 -->
+    <detectOfflineLinks>false</detectOfflineLinks> <!-- too slow : http://jira.codehaus.org/browse/MJAVADOC-268 -->    
     <quiet>true</quiet>
     <!-- maven-pmd-plugin -->
     <targetJdk>${maven.compiler.target}</targetJdk>
@@ -554,6 +556,17 @@
           </dependency>
         </dependencies>
       </plugin>      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.wagon</groupId>
+            <artifactId>wagon-webdav-jackrabbit</artifactId>
+            <version>${version.wagon-webdav-jackrabbit}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
     </plugins>
   </build>
   <profiles>
