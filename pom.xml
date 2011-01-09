@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.exoplatform</groupId>
   <artifactId>exo.parent</artifactId>
-  <version>8.1</version>
+  <version>8.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo parent POM</name>
   <description>Provides default project configuration for eXo projects</description>
@@ -37,9 +37,9 @@
     <url>http://www.exoplatform.com</url>
   </organization>
   <scm>
-    <connection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/8.1</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/8.1</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/parent/tags/8.1</url>
+    <connection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/8</connection>
+    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/tags/8</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/parent/tags/8</url>
   </scm>
   <issueManagement>
     <system>jira</system>
