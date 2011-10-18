@@ -46,8 +46,8 @@
     <url>http://jira.exoplatform.org/</url>
   </issueManagement>
   <ciManagement>
-    <system>hudson</system>
-    <url>http://builder.exoplatform.org/hudson/job/parent-pom-trunk-ci</url>
+    <system>jenkins</system>
+    <url>https://ci.exoplatform.org/job/parent-pom-master-ci</url>
   </ciManagement>
   <distributionManagement>
     <repository>
