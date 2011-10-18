@@ -37,9 +37,9 @@
     <url>http://www.exoplatform.com</url>
   </organization>
   <scm>
-    <connection>scm:svn:http://svn.exoplatform.org/projects/parent/trunk</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/parent/trunk</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/parent/trunk</url>
+    <connection>scm:git:http://git.exoplatform.org/public/maven-parent-pom</connection>
+    <developerConnection>scm:git:https://git.exoplatform.org/public/maven-parent-pom</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/parent/trunk</url>
   </scm>
   <issueManagement>
     <system>jira</system>
