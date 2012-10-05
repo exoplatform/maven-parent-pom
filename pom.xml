@@ -90,7 +90,7 @@
     <version.exobuild.plugin>1.2.2</version.exobuild.plugin>
     <version.exopc.plugin>1.0.5</version.exopc.plugin>
     <version.failsafe.plugin>${version.surefire.plugin}</version.failsafe.plugin>
-    <version.findbugs.plugin>2.3.1</version.findbugs.plugin>
+    <version.findbugs.plugin>2.5.2</version.findbugs.plugin>
     <version.gpg.plugin>1.1</version.gpg.plugin>
     <version.idea.plugin>2.2</version.idea.plugin>
     <version.install.plugin>2.4</version.install.plugin>
