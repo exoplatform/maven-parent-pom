@@ -74,7 +74,7 @@
     <version.buildhelper.plugin>1.5</version.buildhelper.plugin>
     <version.buildnumber.plugin>1.1</version.buildnumber.plugin>
     <version.clean.plugin>2.5</version.clean.plugin>
-    <version.checkstyle.plugin>2.5</version.checkstyle.plugin>
+    <version.checkstyle.plugin>2.9.1</version.checkstyle.plugin>
     <version.clirr.plugin>2.2.2</version.clirr.plugin>
     <version.clover2.plugin>3.1.7</version.clover2.plugin>
     <version.cobertura.plugin>2.5.2</version.cobertura.plugin>
