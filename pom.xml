@@ -80,7 +80,7 @@
     <version.cobertura.plugin>2.5.2</version.cobertura.plugin>
     <version.compiler.plugin>2.5.1</version.compiler.plugin>
     <version.dependency.plugin>2.1</version.dependency.plugin>
-    <version.deploy.plugin>2.5</version.deploy.plugin>
+    <version.deploy.plugin>2.7</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
     <version.eclipse.plugin>2.8</version.eclipse.plugin>
     <version.ear.plugin>2.8</version.ear.plugin>
