@@ -102,7 +102,7 @@
     <version.jdepend.plugin>2.0-beta-2</version.jdepend.plugin>
     <!--  Upgrading JIBX doesn't work for JCR (at least without modifying the project)-->
     <version.jibx.plugin>1.1.6a</version.jibx.plugin>
-    <version.jxr.plugin>2.1</version.jxr.plugin>
+    <version.jxr.plugin>2.3</version.jxr.plugin>
     <!-- maven-project-info-reports-plugin -->
     <version.pir.plugin>2.5.1</version.pir.plugin>
     <version.plexus.plugin>1.3.8</version.plexus.plugin>
