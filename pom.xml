@@ -154,7 +154,7 @@
     <!-- maven-dependency-plugin -->
     <repoUrl>${exo.public.repo.url}</repoUrl>
     <!-- maven-enforcer-plugin -->
-    <maven.min.version>2.2.1</maven.min.version>
+    <maven.min.version>3.0.4</maven.min.version>
     <jdk.min.version>${maven.compiler.source}</jdk.min.version>
     <!-- To configure animal-sniffer to check API compat -->
     <animal-sniffer.signature.groupId>org.codehaus.mojo.signature</animal-sniffer.signature.groupId>
