@@ -78,7 +78,7 @@
     <version.clirr.plugin>2.2.2</version.clirr.plugin>
     <version.clover2.plugin>3.0.1</version.clover2.plugin>
     <version.cobertura.plugin>2.4</version.cobertura.plugin>
-    <version.compiler.plugin>2.3.1</version.compiler.plugin>
+    <version.compiler.plugin>2.5.1</version.compiler.plugin>
     <version.dependency.plugin>2.1</version.dependency.plugin>
     <version.deploy.plugin>2.5</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
