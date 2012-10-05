@@ -68,7 +68,7 @@
     <!-- **************** -->
     <!-- Plugins versions -->
     <!-- **************** -->
-    <version.antrun.plugin>1.4</version.antrun.plugin>
+    <version.antrun.plugin>1.7</version.antrun.plugin>
     <!-- Bad perfs with 2.2-beta-X, do not uprade assembly plugin for now  -->
     <version.assembly.plugin>2.1</version.assembly.plugin>
     <version.buildhelper.plugin>1.5</version.buildhelper.plugin>
