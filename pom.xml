@@ -91,7 +91,7 @@
     <version.exopc.plugin>1.0.5</version.exopc.plugin>
     <version.failsafe.plugin>${version.surefire.plugin}</version.failsafe.plugin>
     <version.findbugs.plugin>2.5.2</version.findbugs.plugin>
-    <version.gpg.plugin>1.1</version.gpg.plugin>
+    <version.gpg.plugin>1.4</version.gpg.plugin>
     <version.idea.plugin>2.2</version.idea.plugin>
     <version.install.plugin>2.4</version.install.plugin>
     <version.invoker.plugin>1.7</version.invoker.plugin>
