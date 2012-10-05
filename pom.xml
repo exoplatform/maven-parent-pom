@@ -175,6 +175,9 @@
     <defaulteXoReleaseProfiles>release</defaulteXoReleaseProfiles>
     <releaseProfiles>${defaulteXoReleaseProfiles}</releaseProfiles>
   </properties>
+  <prerequisites>
+    <maven>${maven.min.version}</maven>
+  </prerequisites>
   <build>
     <pluginManagement>
       <!-- All plugins ordered by shortname (antrun, assembly ...) -->
