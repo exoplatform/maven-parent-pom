@@ -72,7 +72,7 @@
     <!-- Bad perfs with 2.2-beta-X, do not uprade assembly plugin for now  -->
     <version.assembly.plugin>2.1</version.assembly.plugin>
     <version.buildhelper.plugin>1.5</version.buildhelper.plugin>
-    <version.buildnumber.plugin>1.0</version.buildnumber.plugin>
+    <version.buildnumber.plugin>1.1</version.buildnumber.plugin>
     <version.clean.plugin>2.5</version.clean.plugin>
     <version.checkstyle.plugin>2.5</version.checkstyle.plugin>
     <version.clirr.plugin>2.2.2</version.clirr.plugin>
