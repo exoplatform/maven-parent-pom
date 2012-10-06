@@ -59,7 +59,7 @@
       <url>${exo.snapshots.repo.url}</url>
     </snapshotRepository>
     <site>
-      <id>sites.exoplatform.org</id>
+      <id>repository.exoplatform.org</id>
       <url>${site.deploy.url}</url>
     </site>
   </distributionManagement>
