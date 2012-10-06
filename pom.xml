@@ -185,6 +185,13 @@
     <maven>${maven.min.version}</maven>
   </prerequisites>
   <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav-jackrabbit</artifactId>
+        <version>${version.wagon-webdav-jackrabbit}</version>
+      </extension>
+    </extensions>
     <pluginManagement>
       <!-- All plugins ordered by shortname (antrun, assembly ...) -->
       <plugins>
@@ -247,13 +254,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>${version.deploy.plugin}</version>
-          <dependencies>
-            <dependency>
-              <groupId>org.apache.maven.wagon</groupId>
-              <artifactId>wagon-webdav-jackrabbit</artifactId>
-              <version>${version.wagon-webdav-jackrabbit}</version>
-            </dependency>
-          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -486,13 +486,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>${version.site.plugin}</version>
-          <dependencies>
-            <dependency>
-              <groupId>org.apache.maven.wagon</groupId>
-              <artifactId>wagon-webdav-jackrabbit</artifactId>
-              <version>${version.wagon-webdav-jackrabbit}</version>
-            </dependency>
-          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
