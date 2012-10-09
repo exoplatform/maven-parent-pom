@@ -166,7 +166,7 @@
     <animal-sniffer.signature.artifactId>java15</animal-sniffer.signature.artifactId>
     <animal-sniffer.signature.version>1.0</animal-sniffer.signature.version>
     <!-- The version of maven-scm-provider-svnjava to use -->
-    <maven-scm-provider-svnjava.version>1.10.1</maven-scm-provider-svnjava.version>
+    <maven-scm-provider-svnjava.version>2.0.5</maven-scm-provider-svnjava.version>
     <!-- maven-idea-plugin & maven-eclipse-plugin -->
     <downloadSources>true</downloadSources>
     <!--  maven-javadoc-plugin -->
