@@ -101,6 +101,7 @@
     <version.buildhelper.plugin>1.7</version.buildhelper.plugin>
     <version.buildnumber.plugin>1.1</version.buildnumber.plugin>
     <version.clean.plugin>2.5</version.clean.plugin>
+    <version.changes.plugin>2.8</version.changes.plugin>
     <version.checkstyle.plugin>2.9.1</version.checkstyle.plugin>
     <version.clirr.plugin>2.5</version.clirr.plugin>
     <version.clover2.plugin>3.1.7</version.clover2.plugin>
@@ -227,6 +228,11 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>buildnumber-maven-plugin</artifactId>
           <version>${version.buildnumber.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-changes-plugin</artifactId>
+          <version>${version.changes.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -853,6 +859,14 @@
           <excludes>
             <exclude>**/JiBX_*</exclude>
           </excludes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-changes-plugin</artifactId>
+        <version>${version.changes.plugin}</version>
+        <configuration>
+          <useJql>true</useJql>
         </configuration>
       </plugin>
     </plugins>
