@@ -37,9 +37,9 @@
     <url>http://www.exoplatform.com</url>
   </organization>
   <scm>
-    <connection>scm:git:http://git.exoplatform.org/public/maven-parent-pom</connection>
-    <developerConnection>scm:git:https://git.exoplatform.org/public/maven-parent-pom</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/parent/trunk</url>
+    <connection>scm:git:git://github.com/${github.organization}/${github.repository}.git</connection>
+    <developerConnection>scm:git:git@github.com:${github.organization}/${github.repository}.git</developerConnection>
+    <url>https://fisheye.exoplatform.org/browse/${github.repository}</url>
   </scm>
   <issueManagement>
     <system>jira</system>
@@ -65,6 +65,11 @@
   </distributionManagement>
   <properties>
     <exo.product.name>${project.name}</exo.product.name>
+    <!-- **************************************** -->
+    <!-- SCM Settings                             -->
+    <!-- **************************************** -->
+    <github.organization>exoplatform</github.organization>
+    <github.repository>maven-parent-pom</github.repository>
     <!-- **************************************** -->
     <!-- Repositories URLs                        -->
     <!-- Using DAV for large artifacts - PAR-156  -->
