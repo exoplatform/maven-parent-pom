@@ -43,7 +43,7 @@
   </scm>
   <issueManagement>
     <system>jira</system>
-    <url>http://jira.exoplatform.org/</url>
+    <url>https://jira.exoplatform.org/browse/PAR</url>
   </issueManagement>
   <ciManagement>
     <system>jenkins</system>
