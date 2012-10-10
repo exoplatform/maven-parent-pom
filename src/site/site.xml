@@ -6,7 +6,7 @@
   <bannerLeft>
     <name>Maven Sites for eXo Project</name>
     <src>http://repository.exoplatform.org/images/header_branding.png</src>
-    <href>${exo.site.base.url}</href>
+    <href>${site.url}</href>
   </bannerLeft>
 
   <skin>
@@ -22,8 +22,8 @@
 
   <body>
     <breadcrumbs>
-      <item name="Maven Sites for eXo Project" href="${exo.site.base.url}"/>
-      <item name="${project.name}" href="${site.url}"/>
+      <item name="Maven Sites for eXo Project" href="${site.url}"/>
+      <item name="${project.name}" href="${project.url}"/>
     </breadcrumbs>
 
     <!-- Menus that every project will inherit -->
