@@ -43,11 +43,11 @@
   </scm>
   <issueManagement>
     <system>jira</system>
-    <url>${jira.base.url}/browse/${jira.project.key}</url>
+    <url>${jira.base.url}/browse/${jira.project.key}/</url>
   </issueManagement>
   <ciManagement>
     <system>jenkins</system>
-    <url>https://ci.exoplatform.org/job/maven-parent-pom-master-ci/</url>
+    <url>${jenkins.base.url}/job/${jenkins.job.name}/</url>
   </ciManagement>
   <distributionManagement>
     <repository>
@@ -75,6 +75,11 @@
     <!-- **************************************** -->
     <jira.base.url>https://jira.exoplatform.org</jira.base.url>
     <jira.project.key>PAR</jira.project.key>
+    <!-- **************************************** -->
+    <!-- Jenkins Settings                         -->
+    <!-- **************************************** -->
+    <jenkins.base.url>https://ci.exoplatform.org</jenkins.base.url>
+    <jenkins.job.name>maven-parent-pom-master-ci</jenkins.job.name>
     <!-- **************************************** -->
     <!-- Repositories URLs                        -->
     <!-- Using DAV for large artifacts - PAR-156  -->
