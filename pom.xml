@@ -107,7 +107,7 @@
     <version.clover2.plugin>3.1.7</version.clover2.plugin>
     <version.cobertura.plugin>2.5.2</version.cobertura.plugin>
     <version.compiler.plugin>2.5.1</version.compiler.plugin>
-    <version.dependency.plugin>2.5.1</version.dependency.plugin>
+    <version.dependency.plugin>2.6-SNAPSHOT</version.dependency.plugin>
     <version.deploy.plugin>2.7</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
     <version.eclipse.plugin>2.9</version.eclipse.plugin>
@@ -837,6 +837,11 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>${version.dependency.plugin}</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>${version.javadoc.plugin}</version>
       </plugin>
@@ -873,6 +878,11 @@
         <configuration>
           <useJql>true</useJql>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>${version.sonar.plugin}</version>
       </plugin>
     </plugins>
   </reporting>
