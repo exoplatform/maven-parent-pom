@@ -22,7 +22,6 @@
 
   <body>
     <breadcrumbs>
-      <item name="Maven Sites for eXo Project" href="${site.url}"/>
       <item name="${project.name}" href="${project.url}"/>
     </breadcrumbs>
 
@@ -33,6 +32,8 @@
 
   <custom>
     <fluidoSkin>
+      <leftColumnClass>span2</leftColumnClass>
+      <bodyColumnClass>span10</bodyColumnClass>
       <topBarEnabled>false</topBarEnabled>
       <sideBarEnabled>true</sideBarEnabled>
       <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
