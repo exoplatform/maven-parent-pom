@@ -90,7 +90,7 @@
     <!-- **************************************** -->
     <!-- Site URL                                 -->
     <!-- **************************************** -->
-    <site.url>https://projects.exoplatform.org/</site.url>
+    <site.url>https://projects.exoplatform.org</site.url>
     <site.deploy.url>dav:${site.url}</site.deploy.url>
     <!-- **************** -->
     <!-- Plugins versions -->
