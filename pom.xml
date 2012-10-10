@@ -47,7 +47,7 @@
   </issueManagement>
   <ciManagement>
     <system>jenkins</system>
-    <url>https://ci.exoplatform.org/job/parent-pom-master-ci</url>
+    <url>https://ci.exoplatform.org/job/maven-parent-pom-master-ci/</url>
   </ciManagement>
   <distributionManagement>
     <repository>
