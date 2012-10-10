@@ -65,6 +65,20 @@
   </distributionManagement>
   <properties>
     <exo.product.name>${project.name}</exo.product.name>
+    <!-- **************************************** -->
+    <!-- Repositories URLs                        -->
+    <!-- Using DAV for large artifacts - PAR-156  -->
+    <!-- **************************************** -->
+    <exo.releases.repo.url>dav:http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
+    <exo.snapshots.repo.url>dav:http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
+    <exo.public.repo.url>http://repository.exoplatform.org/public/</exo.public.repo.url>
+    <!-- **************************************** -->
+    <!-- Site URL                                 -->
+    <!-- **************************************** -->
+    <exo.site.base.url>https://projects.exoplatform.org</exo.site.base.url>
+    <site.name>maven-parent-pom-master</site.name>
+    <site.url>${exo.site.base.url}/${site.name}/</site.url>
+    <site.deploy.url>dav:${site.url}</site.deploy.url>
     <!-- **************** -->
     <!-- Plugins versions -->
     <!-- **************** -->
@@ -123,20 +137,6 @@
     <!-- *************** -->
     <version.animal-sniffer.enforcer-rule>1.5</version.animal-sniffer.enforcer-rule>
     <version.wagon-webdav-jackrabbit>2.2</version.wagon-webdav-jackrabbit>
-    <!-- **************************************** -->
-    <!-- Repositories URLs                        -->
-    <!-- Using DAV for large artifacts - PAR-156  -->
-    <!-- **************************************** -->
-    <exo.releases.repo.url>dav:http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
-    <exo.snapshots.repo.url>dav:http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
-    <exo.public.repo.url>http://repository.exoplatform.org/public/</exo.public.repo.url>
-    <!-- **************************************** -->
-    <!-- Site URL                                 -->
-    <!-- **************************************** -->
-    <exo.site.base.url>https://projects.exoplatform.org</exo.site.base.url>
-    <site.name>maven-parent-pom-master</site.name>
-    <site.url>${exo.site.base.url}/${site.name}/</site.url>
-    <site.deploy.url>dav:${site.url}</site.deploy.url>
     <!-- ************** -->
     <!-- Build settings -->
     <!-- ************** -->
