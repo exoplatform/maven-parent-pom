@@ -135,7 +135,7 @@
     <!-- **************************************** -->
     <exo.site.base.url>https://projects.exoplatform.org</exo.site.base.url>
     <site.name>maven-parent-pom-master</site.name>
-    <site.url>${exo.site.base.url}/${site.name}</site.url>
+    <site.url>${exo.site.base.url}/${site.name}/</site.url>
     <site.deploy.url>dav:${site.url}</site.deploy.url>
     <!-- ************** -->
     <!-- Build settings -->
