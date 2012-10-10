@@ -36,9 +36,7 @@
       <topBarEnabled>false</topBarEnabled>
       <sideBarEnabled>true</sideBarEnabled>
       <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
-      <googleSearch>
-        <sitesearch/>
-      </googleSearch>
+      <googleSearch/>
     </fluidoSkin>
   </custom>
 </project>
