@@ -21,6 +21,10 @@
   <googleAnalyticsAccountId>UA-13124591-7</googleAnalyticsAccountId>
 
   <body>
+    <head>
+      <link href="//netdna.bootstrapcdn.com/bootswatch/2.1.0/spacelab/bootstrap.min.css" type="text/css" rel="stylesheet" media="all"/>
+    </head>
+
     <breadcrumbs>
       <item name="${project.name}" href="${project.url}"/>
     </breadcrumbs>
