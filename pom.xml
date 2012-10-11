@@ -877,6 +877,7 @@
         <version>${version.changes.plugin}</version>
         <configuration>
           <useJql>true</useJql>
+          <onlyCurrentVersion>true</onlyCurrentVersion>
         </configuration>
       </plugin>
       <plugin>
