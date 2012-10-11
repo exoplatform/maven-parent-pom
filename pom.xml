@@ -194,6 +194,9 @@
     <autoVersionSubmodules>true</autoVersionSubmodules>
     <defaulteXoReleaseProfiles>release</defaulteXoReleaseProfiles>
     <releaseProfiles>${defaulteXoReleaseProfiles}</releaseProfiles>
+    <!-- These properties are automatically computed during the build -->
+    <exo.product.scm.revision>N/A</exo.product.scm.revision>
+    <parsedVersion.majorVersion>N/A</parsedVersion.majorVersion>
   </properties>
   <prerequisites>
     <maven>${maven.min.version}</maven>
