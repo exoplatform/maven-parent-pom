@@ -105,7 +105,6 @@
     <version.changes.plugin>2.8</version.changes.plugin>
     <version.checkstyle.plugin>2.9.1</version.checkstyle.plugin>
     <version.clirr.plugin>2.5</version.clirr.plugin>
-    <version.clover2.plugin>3.1.7</version.clover2.plugin>
     <version.cobertura.plugin>2.5.2</version.cobertura.plugin>
     <version.compiler.plugin>2.5.1</version.compiler.plugin>
     <version.dependency.plugin>2.6-SNAPSHOT</version.dependency.plugin>
@@ -158,11 +157,6 @@
     <!-- Cross plugins settings -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <!-- maven-clover2-plugin -->
-    <!-- where snapshots are stored to use clover optimization -->
-    <maven.clover.snapshot>${user.home}/.clover/${project.groupId}-${project.artifactId}/clover.snapshot</maven.clover.snapshot>
-    <!-- where historical data are stored -->
-    <maven.clover.historyDir>${user.home}/.clover/${project.groupId}-${project.artifactId}/clover.history</maven.clover.historyDir>
     <!-- maven-clirr-plugin -->
     <textOutputFile>${project.build.directory}/clirr-report.txt</textOutputFile>
     <!-- maven-compiler-plugin -->
@@ -262,11 +256,6 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>clirr-maven-plugin</artifactId>
           <version>${version.clirr.plugin}</version>
-        </plugin>
-        <plugin>
-          <groupId>com.atlassian.maven.plugins</groupId>
-          <artifactId>maven-clover2-plugin</artifactId>
-          <version>${version.clover2.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
