@@ -225,6 +225,10 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
           <version>${version.assembly.plugin}</version>
+          <configuration>
+            <!-- Perfs improvements - PAR-191 -->
+            <useJvmChmod>true</useJvmChmod>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -265,6 +269,10 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
           <version>${version.dependency.plugin}</version>
+          <configuration>
+            <!-- Perfs improvements - PAR-191 -->
+            <useJvmChmod>true</useJvmChmod>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
