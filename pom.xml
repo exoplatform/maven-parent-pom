@@ -140,7 +140,6 @@
     <version.release.plugin>2.3.2</version.release.plugin>
     <version.resources.plugin>2.6</version.resources.plugin>
     <version.site.plugin>3.1</version.site.plugin>
-    <version.sonar.plugin>1.0-beta-1</version.sonar.plugin>
     <version.source.plugin>2.2.1</version.source.plugin>
     <version.surefire.plugin>2.12.4</version.surefire.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
@@ -508,11 +507,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>${version.site.plugin}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>sonar-maven-plugin</artifactId>
-          <version>${version.sonar.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -886,11 +880,6 @@
           <resolutionIds>Unresolved,Fixed,Won't Fix,Duplicate,Incomplete,Cannot Reproduce</resolutionIds>
           <statusIds>Resolved,Closed</statusIds>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>${version.sonar.plugin}</version>
       </plugin>
     </plugins>
   </reporting>
