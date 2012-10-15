@@ -98,7 +98,7 @@
     <version.android.plugin>3.3.2</version.android.plugin>
     <version.antrun.plugin>1.7</version.antrun.plugin>
     <version.archetype.plugin>2.2</version.archetype.plugin>
-    <version.assembly.plugin>2.4-SNAPSHOT</version.assembly.plugin>
+    <version.assembly.plugin>2.3</version.assembly.plugin>
     <version.buildhelper.plugin>1.7</version.buildhelper.plugin>
     <version.buildnumber.plugin>1.1</version.buildnumber.plugin>
     <version.clean.plugin>2.5</version.clean.plugin>
