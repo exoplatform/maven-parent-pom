@@ -149,7 +149,7 @@
     <!-- *************** -->
     <!-- Others versions -->
     <!-- *************** -->
-    <version.animal-sniffer.enforcer-rule>1.5</version.animal-sniffer.enforcer-rule>
+    <version.animal-sniffer.enforcer-rule>1.8</version.animal-sniffer.enforcer-rule>
     <version.wagon-webdav-jackrabbit>2.2</version.wagon-webdav-jackrabbit>
     <!-- PAR-193 : performances boost workaround -->
     <version.plexus-utils>3.0.8</version.plexus-utils>
