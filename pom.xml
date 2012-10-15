@@ -150,6 +150,10 @@
     <!-- *************** -->
     <version.animal-sniffer.enforcer-rule>1.5</version.animal-sniffer.enforcer-rule>
     <version.wagon-webdav-jackrabbit>2.2</version.wagon-webdav-jackrabbit>
+    <!-- PAR-193 : performances boost workaround -->
+    <version.plexus-utils>3.0.8</version.plexus-utils>
+    <!-- PAR-155 : Produce project sources package distribution -->
+    <version.apache-source-release-assembly-descriptor>1.0.4</version.apache-source-release-assembly-descriptor>
     <!-- ************** -->
     <!-- Build settings -->
     <!-- ************** -->
@@ -191,8 +195,6 @@
     <!-- These properties are automatically computed during the build -->
     <exo.product.scm.revision>N/A</exo.product.scm.revision>
     <parsedVersion.majorVersion>N/A</parsedVersion.majorVersion>
-    <!-- PAR-193 : performances boost workaround -->
-    <version.plexus-utils>3.0.8</version.plexus-utils>
   </properties>
   <prerequisites>
     <maven>${maven.min.version}</maven>
@@ -873,6 +875,35 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>clirr-maven-plugin</artifactId>
+          </plugin>
+          <!-- Create a source-release artifact that contains the fully buildable
+               project directory source structure. This is the artifact which is
+               the official subject of any release vote. -->
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <dependencies>
+              <dependency>
+                <groupId>org.apache.apache.resources</groupId>
+                <artifactId>apache-source-release-assembly-descriptor</artifactId>
+                <version>${version.apache-source-release-assembly-descriptor}</version>
+              </dependency>
+            </dependencies>
+            <executions>
+              <execution>
+                <id>source-release-assembly</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
+                  <descriptorRefs>
+                    <descriptorRef>source-release</descriptorRef>
+                  </descriptorRefs>
+                  <tarLongFileMode>gnu</tarLongFileMode>
+                </configuration>
+              </execution>
+            </executions>
           </plugin>
         </plugins>
       </build>
