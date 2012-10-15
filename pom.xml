@@ -671,6 +671,9 @@
                 <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
               </manifestEntries>
             </archive>
+            <!-- PAR-145 : Be sure that all product package all their classes in JAR (No stand alone classes in WEB-INF/classes) -->
+            <archiveClasses>true</archiveClasses>
+            <attachClasses>true</attachClasses>
           </configuration>
         </plugin>
         <plugin>
