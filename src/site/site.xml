@@ -42,11 +42,6 @@
       <sideBarEnabled>true</sideBarEnabled>
       <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
       <googleSearch/>
-      <gitHub>
-        <projectId>${github.organization}/${github.repository}</projectId>
-        <ribbonOrientation>right</ribbonOrientation>
-        <ribbonColor>orange</ribbonColor>
-      </gitHub>
     </fluidoSkin>
   </custom>
 </project>
