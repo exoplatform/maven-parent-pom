@@ -37,9 +37,9 @@
     <url>http://www.exoplatform.com</url>
   </organization>
   <scm>
-    <connection>scm:git:git://github.com/${github.organization}/${github.repository}.git</connection>
-    <developerConnection>scm:git:git@github.com:${github.organization}/${github.repository}.git</developerConnection>
-    <url>https://fisheye.exoplatform.org/browse/${github.repository}</url>
+    <connection>scm:git:git://github.com/exoplatform/maven-parent-pom.git</connection>
+    <developerConnection>scm:git:git@github.com:exoplatform/maven-parent-pom.git</developerConnection>
+    <url>https://fisheye.exoplatform.org/browse/maven-parent-pom</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
@@ -66,11 +66,6 @@
   </distributionManagement>
   <properties>
     <exo.product.name>${project.name}</exo.product.name>
-    <!-- **************************************** -->
-    <!-- GitHub Settings                             -->
-    <!-- **************************************** -->
-    <github.organization>exoplatform</github.organization>
-    <github.repository>maven-parent-pom</github.repository>
     <!-- **************************************** -->
     <!-- Jira Settings                            -->
     <!-- **************************************** -->
