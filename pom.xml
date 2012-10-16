@@ -164,8 +164,8 @@
     <!-- maven-clirr-plugin -->
     <textOutputFile>${project.build.directory}/clirr-report.txt</textOutputFile>
     <!-- maven-compiler-plugin -->
-    <maven.compiler.target>1.5</maven.compiler.target>
-    <maven.compiler.source>1.5</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.optimize>true</maven.compiler.optimize>
@@ -176,7 +176,7 @@
     <jdk.min.version>${maven.compiler.source}</jdk.min.version>
     <!-- To configure animal-sniffer to check API compat -->
     <animal-sniffer.signature.groupId>org.codehaus.mojo.signature</animal-sniffer.signature.groupId>
-    <animal-sniffer.signature.artifactId>java15</animal-sniffer.signature.artifactId>
+    <animal-sniffer.signature.artifactId>java16</animal-sniffer.signature.artifactId>
     <animal-sniffer.signature.version>1.0</animal-sniffer.signature.version>
     <!-- The version of maven-scm-provider-svnjava to use -->
     <maven-scm-provider-svnjava.version>2.0.5</maven-scm-provider-svnjava.version>
