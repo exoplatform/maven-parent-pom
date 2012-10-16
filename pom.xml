@@ -186,14 +186,7 @@
     <quiet>true</quiet>
     <!-- maven-pmd-plugin -->
     <targetJdk>${maven.compiler.target}</targetJdk>
-    <!-- maven-release-plugin -->
-    <goals>deploy</goals>
-    <useReleaseProfile>false</useReleaseProfile>
-    <autoVersionSubmodules>true</autoVersionSubmodules>
-    <defaulteXoReleaseProfiles>exo-release</defaulteXoReleaseProfiles>
-    <releaseProfiles>${defaulteXoReleaseProfiles}</releaseProfiles>
     <!-- These properties are automatically computed during the build -->
-    <buildNumber>N/A</buildNumber>
     <parsedVersion.majorVersion>N/A</parsedVersion.majorVersion>
   </properties>
   <prerequisites>
@@ -582,6 +575,11 @@
           <artifactId>maven-release-plugin</artifactId>
           <version>${version.release.plugin}</version>
           <configuration>
+            <!-- maven-release-plugin -->
+            <goals>deploy</goals>
+            <useReleaseProfile>false</useReleaseProfile>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+            <arguments>-Pexo-release ${arguments}</arguments>
             <providerImplementations>
               <svn>javasvn</svn>
             </providerImplementations>
