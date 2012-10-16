@@ -137,6 +137,7 @@
     <version.rar.plugin>2.2</version.rar.plugin>
     <version.release.plugin>2.3.2</version.release.plugin>
     <version.resources.plugin>2.6</version.resources.plugin>
+    <version.selenium.plugin>1.0.1</version.selenium.plugin>
     <version.site.plugin>3.2</version.site.plugin>
     <version.source.plugin>2.2.1</version.source.plugin>
     <version.surefire.plugin>2.12.4</version.surefire.plugin>
@@ -617,6 +618,11 @@
               <version>${version.plexus-utils}</version>
             </dependency>
           </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>selenium-maven-plugin</artifactId>
+          <version>${version.selenium.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
