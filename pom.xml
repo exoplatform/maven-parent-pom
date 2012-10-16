@@ -190,6 +190,7 @@
     <!-- maven-pmd-plugin -->
     <targetJdk>${maven.compiler.target}</targetJdk>
     <!-- maven-release-plugin -->
+    <goals>deploy</goals>
     <useReleaseProfile>false</useReleaseProfile>
     <autoVersionSubmodules>true</autoVersionSubmodules>
     <defaulteXoReleaseProfiles>release</defaulteXoReleaseProfiles>
