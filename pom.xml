@@ -106,6 +106,7 @@
     <version.dependency.plugin>2.5.1</version.dependency.plugin>
     <version.deploy.plugin>2.7</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
+    <version.docbkx.plugin>2.0.13</version.docbkx.plugin>
     <version.eclipse.plugin>2.9</version.eclipse.plugin>
     <version.ear.plugin>2.8</version.ear.plugin>
     <version.ejb.plugin>2.3</version.ejb.plugin>
@@ -300,6 +301,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>${version.deploy.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.agilejava.docbkx</groupId>
+          <artifactId>docbkx-maven-plugin</artifactId>
+          <version>${version.docbkx.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
