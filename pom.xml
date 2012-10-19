@@ -94,6 +94,7 @@
     <version.android.plugin>3.3.2</version.android.plugin>
     <version.antrun.plugin>1.7</version.antrun.plugin>
     <version.archetype.plugin>2.2</version.archetype.plugin>
+    <version.aspectj.plugin>1.3</version.aspectj.plugin>
     <version.assembly.plugin>2.3</version.assembly.plugin>
     <version.buildhelper.plugin>1.7</version.buildhelper.plugin>
     <version.buildnumber.plugin>1.1</version.buildnumber.plugin>
@@ -105,6 +106,7 @@
     <version.dependency.plugin>2.5.1</version.dependency.plugin>
     <version.deploy.plugin>2.7</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
+    <version.docbkx.plugin>2.0.14</version.docbkx.plugin>
     <version.eclipse.plugin>2.9</version.eclipse.plugin>
     <version.ear.plugin>2.8</version.ear.plugin>
     <version.ejb.plugin>2.3</version.ejb.plugin>
@@ -136,12 +138,14 @@
     <version.rar.plugin>2.2</version.rar.plugin>
     <version.release.plugin>2.3.2</version.release.plugin>
     <version.resources.plugin>2.6</version.resources.plugin>
+    <version.selenium.plugin>1.0.1</version.selenium.plugin>
     <version.site.plugin>3.2</version.site.plugin>
     <version.source.plugin>2.2.1</version.source.plugin>
     <version.surefire.plugin>2.12.4</version.surefire.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
     <version.versions.plugin>1.3.1</version.versions.plugin>
     <version.war.plugin>2.3</version.war.plugin>
+    <version.wikbook.plugin>0.9.41</version.wikbook.plugin>
     <version.xml.plugin>1.0</version.xml.plugin>
     <version.yuicompressor.plugin>0.7.1</version.yuicompressor.plugin>
     <!-- *************** -->
@@ -188,14 +192,7 @@
     <quiet>true</quiet>
     <!-- maven-pmd-plugin -->
     <targetJdk>${maven.compiler.target}</targetJdk>
-    <!-- maven-release-plugin -->
-    <goals>deploy</goals>
-    <useReleaseProfile>false</useReleaseProfile>
-    <autoVersionSubmodules>true</autoVersionSubmodules>
-    <defaulteXoReleaseProfiles>exo-release</defaulteXoReleaseProfiles>
-    <releaseProfiles>${defaulteXoReleaseProfiles}</releaseProfiles>
     <!-- These properties are automatically computed during the build -->
-    <exo.product.scm.revision>N/A</exo.product.scm.revision>
     <parsedVersion.majorVersion>N/A</parsedVersion.majorVersion>
   </properties>
   <prerequisites>
@@ -226,6 +223,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-archetype-plugin</artifactId>
           <version>${version.archetype.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>aspectj-maven-plugin</artifactId>
+          <version>${version.aspectj.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -304,6 +306,11 @@
           <version>${version.deploy.plugin}</version>
         </plugin>
         <plugin>
+          <groupId>com.agilejava.docbkx</groupId>
+          <artifactId>docbkx-maven-plugin</artifactId>
+          <version>${version.docbkx.plugin}</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-docck-plugin</artifactId>
           <version>${version.docck.plugin}</version>
@@ -322,7 +329,7 @@
                 <Date>${maven.build.timestamp}</Date>
                 <Implementation-URL>${project.url}</Implementation-URL>
                 <SCM-URL>${project.scm.connection}</SCM-URL>
-                <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
+                <SCM-Revision>${buildNumber}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
                 <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
@@ -368,7 +375,7 @@
                 <Date>${maven.build.timestamp}</Date>
                 <Implementation-URL>${project.url}</Implementation-URL>
                 <SCM-URL>${project.scm.connection}</SCM-URL>
-                <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
+                <SCM-Revision>${buildNumber}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
                 <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
@@ -490,7 +497,7 @@
                 <Date>${maven.build.timestamp}</Date>
                 <Implementation-URL>${project.url}</Implementation-URL>
                 <SCM-URL>${project.scm.connection}</SCM-URL>
-                <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
+                <SCM-Revision>${buildNumber}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
                 <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
@@ -520,7 +527,7 @@
                 <Date>${maven.build.timestamp}</Date>
                 <Implementation-URL>${project.url}</Implementation-URL>
                 <SCM-URL>${project.scm.connection}</SCM-URL>
-                <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
+                <SCM-Revision>${buildNumber}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
                 <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
@@ -589,6 +596,11 @@
           <artifactId>maven-release-plugin</artifactId>
           <version>${version.release.plugin}</version>
           <configuration>
+            <!-- maven-release-plugin -->
+            <goals>deploy</goals>
+            <useReleaseProfile>false</useReleaseProfile>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+            <arguments>-Pexo-release ${arguments}</arguments>
             <providerImplementations>
               <svn>javasvn</svn>
             </providerImplementations>
@@ -613,6 +625,11 @@
               <version>${version.plexus-utils}</version>
             </dependency>
           </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>selenium-maven-plugin</artifactId>
+          <version>${version.selenium.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -641,7 +658,7 @@
                 <Date>${maven.build.timestamp}</Date>
                 <Implementation-URL>${project.url}</Implementation-URL>
                 <SCM-URL>${project.scm.connection}</SCM-URL>
-                <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
+                <SCM-Revision>${buildNumber}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
                 <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
@@ -664,6 +681,11 @@
           </configuration>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-report-plugin</artifactId>
+          <version>${version.surefire.plugin}</version>
+        </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
           <version>${version.versions.plugin}</version>
@@ -682,7 +704,7 @@
                 <Date>${maven.build.timestamp}</Date>
                 <Implementation-URL>${project.url}</Implementation-URL>
                 <SCM-URL>${project.scm.connection}</SCM-URL>
-                <SCM-Revision>${exo.product.scm.revision}</SCM-Revision>
+                <SCM-Revision>${buildNumber}</SCM-Revision>
                 <Specification-Title>${exo.product.name}</Specification-Title>
                 <Specification-Version>${parsedVersion.majorVersion}.0</Specification-Version>
                 <Specification-Vendor>${project.organization.name}</Specification-Vendor>
@@ -695,6 +717,11 @@
             <archiveClasses>true</archiveClasses>
             <attachClasses>true</attachClasses>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.wikbook</groupId>
+          <artifactId>wikbook.maven</artifactId>
+          <version>${version.wikbook.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -721,6 +748,33 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>create</goal>
+            </goals>
+            <configuration>
+              <buildNumberPropertyName>buildNumber</buildNumberPropertyName>
+              <revisionOnScmFailure>no_revision</revisionOnScmFailure>
+              <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
+              <timestampFormat>{0, date,yyyyMMdd}</timestampFormat>
+              <providerImplementations>
+                <svn>javasvn</svn>
+              </providerImplementations>
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
+            <artifactId>maven-scm-provider-svnjava</artifactId>
+            <version>${maven-scm-provider-svnjava.version}</version>
+          </dependency>
+        </dependencies>
       </plugin>
     </plugins>
   </build>
@@ -801,34 +855,6 @@
       <id>exo-release</id>
       <build>
         <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>buildnumber-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>generate-scm-revision</id>
-                <phase>prepare-package</phase>
-                <goals>
-                  <goal>create</goal>
-                </goals>
-                <configuration>
-                  <buildNumberPropertyName>exo.product.scm.revision</buildNumberPropertyName>
-                  <revisionOnScmFailure>no_revision</revisionOnScmFailure>
-                  <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
-                  <providerImplementations>
-                    <svn>javasvn</svn>
-                  </providerImplementations>
-                </configuration>
-              </execution>
-            </executions>
-            <dependencies>
-              <dependency>
-                <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
-                <artifactId>maven-scm-provider-svnjava</artifactId>
-                <version>${maven-scm-provider-svnjava.version}</version>
-              </dependency>
-            </dependencies>
-          </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-enforcer-plugin</artifactId>
