@@ -143,6 +143,7 @@
     <version.versions.plugin>1.3.1</version.versions.plugin>
     <version.war.plugin>2.3</version.war.plugin>
     <version.xml.plugin>1.0</version.xml.plugin>
+    <version.yuicompressor.plugin>0.7.1</version.yuicompressor.plugin>
     <!-- *************** -->
     <!-- Others versions -->
     <!-- *************** -->
@@ -699,6 +700,11 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>xml-maven-plugin</artifactId>
           <version>${version.xml.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>net.sf.alchim</groupId>
+          <artifactId>yuicompressor-maven-plugin</artifactId>
+          <version>${version.yuicompressor.plugin}</version>
         </plugin>
       </plugins>
     </pluginManagement>
