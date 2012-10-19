@@ -17,4 +17,5 @@ projects.exoplatform.org
 * Available Projects
 
     * {{{/commons/} <<<eXo Commons>>>}}
+    * {{{/forum/} <<<eXo Forum>>>}}
     * {{{/maven-sandbox-project/} <<<Maven Sandbox Project>>>}}
