@@ -123,6 +123,7 @@
     <version.javacc.plugin>2.6</version.javacc.plugin>
     <version.javadoc.plugin>2.9</version.javadoc.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
+    <version.jaxb2.plugin>0.7.4</version.jaxb2.plugin>
     <version.jdepend.plugin>2.0-beta-2</version.jdepend.plugin>
     <!--  Upgrading JIBX doesn't work for JCR (at least without modifying the project)-->
     <version.jibx.plugin>1.1.6a</version.jibx.plugin>
@@ -533,6 +534,11 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>javancss-maven-plugin</artifactId>
           <version>${version.javancss.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.jvnet.jaxb2.maven2</groupId>
+          <artifactId>maven-jaxb2-plugin</artifactId>
+          <version>${version.jaxb2.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
