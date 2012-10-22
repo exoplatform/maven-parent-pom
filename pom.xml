@@ -77,6 +77,10 @@
     <jenkins.base.url>https://ci.exoplatform.org</jenkins.base.url>
     <jenkins.job.name>maven-parent-pom-master-ci</jenkins.job.name>
     <!-- **************************************** -->
+    <!-- Sonar Settings                           -->
+    <!-- **************************************** -->
+    <sonar.host.url>https://sonar.exoplatform.org/</sonar.host.url>
+    <!-- **************************************** -->
     <!-- Repositories URLs                        -->
     <!-- Using DAV for large artifacts - PAR-156  -->
     <!-- **************************************** -->
@@ -140,6 +144,7 @@
     <version.resources.plugin>2.6</version.resources.plugin>
     <version.selenium.plugin>1.0.1</version.selenium.plugin>
     <version.site.plugin>3.2</version.site.plugin>
+    <version.sonar-maven-report.plugin>0.1</version.sonar-maven-report.plugin>
     <version.source.plugin>2.2.1</version.source.plugin>
     <version.surefire.plugin>2.12.4</version.surefire.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
@@ -645,6 +650,11 @@
           </dependencies>
         </plugin>
         <plugin>
+          <groupId>org.codehaus.sonar-plugins</groupId>
+          <artifactId>maven-report</artifactId>
+          <version>${version.sonar-maven-report.plugin}</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
           <version>${version.source.plugin}</version>
@@ -1138,6 +1148,11 @@
           <resolutionIds>Unresolved,Fixed,Won't Fix,Duplicate,Incomplete,Cannot Reproduce</resolutionIds>
           <statusIds>Resolved,Closed</statusIds>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.sonar-plugins</groupId>
+        <artifactId>maven-report</artifactId>
+        <version>${version.sonar-maven-report.plugin}</version>
       </plugin>
     </plugins>
   </reporting>
