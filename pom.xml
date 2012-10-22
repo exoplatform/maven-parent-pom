@@ -107,6 +107,7 @@
     <version.checkstyle.plugin>2.9.1</version.checkstyle.plugin>
     <version.clirr.plugin>2.5</version.clirr.plugin>
     <version.compiler.plugin>2.5.1</version.compiler.plugin>
+    <version.copy.plugin>0.2.5</version.copy.plugin>
     <version.dependency.plugin>2.6-SNAPSHOT</version.dependency.plugin>
     <version.deploy.plugin>2.7</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
@@ -285,6 +286,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${version.compiler.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.github.goldin</groupId>
+          <artifactId>copy-maven-plugin</artifactId>
+          <version>${version.copy.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
