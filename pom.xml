@@ -1143,6 +1143,11 @@
         <artifactId>maven-changes-plugin</artifactId>
         <version>${version.changes.plugin}</version>
         <configuration>
+          <issueManagementSystems>
+            <issueManagementSystem>JIRA</issueManagementSystem>
+          </issueManagementSystems>
+          <maxEntries>1000</maxEntries>
+          <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
           <useJql>true</useJql>
           <onlyCurrentVersion>true</onlyCurrentVersion>
           <columnNames>Type,Key,Summary,Assignee,Status,Resolution,Fix Version</columnNames>
