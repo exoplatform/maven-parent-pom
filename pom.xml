@@ -1069,9 +1069,11 @@
       </activation>
       <build>
         <plugins>
+          <!-- if releasing current pom with Maven 3, site descriptor must be attached -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-site-plugin</artifactId>
+            <inherited>false</inherited>
             <executions>
               <execution>
                 <id>attach-descriptor</id>
