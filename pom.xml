@@ -298,18 +298,8 @@
           <version>${version.dependency.plugin}</version>
           <configuration>
             <!-- Perfs improvements - PAR-191 -->
-            <!-- Requires version 2.6 - see MDEP-366
             <useJvmChmod>true</useJvmChmod>
-            -->
           </configuration>
-          <dependencies>
-            <!-- PAR-193 : To be removed when the plugin will have a version of plexus-utils >= 3.0.7 -->
-            <dependency>
-              <groupId>org.codehaus.plexus</groupId>
-              <artifactId>plexus-utils</artifactId>
-              <version>${version.plexus-utils}</version>
-            </dependency>
-          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
