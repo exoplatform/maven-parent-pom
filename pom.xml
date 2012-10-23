@@ -422,7 +422,8 @@
           <configuration>
             <systemPropertyVariables>
               <!-- To avoid conflicts on CI server - PAR-192 -->
-              <java.io.tmpdir>${project.build.directory}</java.io.tmpdir>
+              <!-- There is an incompatibility with Byteman - used in social -->
+              <!-- <java.io.tmpdir>${project.build.directory}</java.io.tmpdir> -->
             </systemPropertyVariables>
           </configuration>
         </plugin>
@@ -682,7 +683,8 @@
           <configuration>
             <systemPropertyVariables>
               <!-- To avoid conflicts on CI server - PAR-192 -->
-              <java.io.tmpdir>${project.build.directory}</java.io.tmpdir>
+              <!-- There is an incompatibility with Byteman - used in social -->
+              <!-- <java.io.tmpdir>${project.build.directory}</java.io.tmpdir> -->
             </systemPropertyVariables>
           </configuration>
         </plugin>
