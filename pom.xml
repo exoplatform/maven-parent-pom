@@ -732,6 +732,11 @@
           <version>${version.wikbook.plugin}</version>
         </plugin>
         <plugin>
+          <groupId>org.wikbook</groupId>
+          <artifactId>wikbook.html2pdf</artifactId>
+          <version>${version.wikbook.plugin}</version>
+        </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>xml-maven-plugin</artifactId>
           <version>${version.xml.plugin}</version>
