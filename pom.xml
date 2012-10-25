@@ -196,6 +196,7 @@
     <detectOfflineLinks>false</detectOfflineLinks>
     <!-- too slow : http://jira.codehaus.org/browse/MJAVADOC-268 -->
     <quiet>true</quiet>
+    <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
     <!-- maven-pmd-plugin -->
     <targetJdk>${maven.compiler.target}</targetJdk>
     <!-- These properties are automatically computed during the build -->
