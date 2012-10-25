@@ -196,11 +196,6 @@
     <detectOfflineLinks>false</detectOfflineLinks>
     <!-- too slow : http://jira.codehaus.org/browse/MJAVADOC-268 -->
     <quiet>true</quiet>
-    <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
-    <maven.javadoc.skip>false</maven.javadoc.skip>
-    <maven.javadoc.aggregate-jar.skip>${maven.javadoc.skip}</maven.javadoc.aggregate-jar.skip>
-    <maven.javadoc.jar.skip>${maven.javadoc.skip}</maven.javadoc.jar.skip>
-    <maven.javadoc.report.skip>${maven.javadoc.skip}</maven.javadoc.report.skip>
     <!-- maven-pmd-plugin -->
     <targetJdk>${maven.compiler.target}</targetJdk>
     <!-- These properties are automatically computed during the build -->
@@ -937,15 +932,6 @@
                   <skip>${maven.javadoc.jar.skip}</skip>
                 </configuration>
               </execution>
-              <execution>
-                <id>attach-javadocs-aggregate</id>
-                <goals>
-                  <goal>aggregate-jar</goal>
-                </goals>
-                <configuration>
-                  <skip>${maven.javadoc.aggregate-jar.skip}</skip>
-                </configuration>
-              </execution>
             </executions>
           </plugin>
           <!--
@@ -1125,9 +1111,6 @@
             </reports>
           </reportSet>
         </reportSets>
-        <configuration>
-          <skip>${maven.javadoc.report.skip}</skip>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
