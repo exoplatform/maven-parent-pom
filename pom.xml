@@ -844,7 +844,7 @@
       </build>
     </profile>
     <profile>
-      <id>sources</id>
+        <id>sources</id>
       <activation>
         <property>
           <name>!skip-sources</name>
@@ -1065,7 +1065,7 @@
       </build>
     </profile>
     <profile>
-      <id>maven-3</id>
+      <id>maven-site-descriptor</id>
       <activation>
         <file>
           <!--  This employs that the basedir expression is only recognized by Maven 3.x (see MNG-2363) -->
