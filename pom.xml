@@ -200,6 +200,9 @@
     <targetJdk>${maven.compiler.target}</targetJdk>
     <!-- These properties are automatically computed during the build -->
     <parsedVersion.majorVersion>N/A</parsedVersion.majorVersion>
+    <!-- maven-war-plugin -->
+    <archiveClasses>true</archiveClasses>
+    <maven.war.attachClasses>true</maven.war.attachClasses>
   </properties>
   <prerequisites>
     <maven>${maven.min.version}</maven>
@@ -727,8 +730,8 @@
               </manifestEntries>
             </archive>
             <!-- PAR-145 : Be sure that all product package all their classes in JAR (No stand alone classes in WEB-INF/classes) -->
-            <archiveClasses>true</archiveClasses>
-            <attachClasses>true</attachClasses>
+            <archiveClasses>${archiveClasses}</archiveClasses>
+            <attachClasses>${maven.war.attachClasses}</attachClasses>
           </configuration>
         </plugin>
         <plugin>
