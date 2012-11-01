@@ -136,6 +136,7 @@
     <!--  Upgrading JIBX doesn't work for JCR (at least without modifying the project)-->
     <version.jibx.plugin>1.1.6a</version.jibx.plugin>
     <version.jmeter.plugin>1.4</version.jmeter.plugin>
+    <version.jodconverter.plugin>2.2.1</version.jodconverter.plugin>
     <version.jxr.plugin>2.3</version.jxr.plugin>
     <version.project-info-reports.plugin>2.6</version.project-info-reports.plugin>
     <version.plexus.plugin>1.3.8</version.plexus.plugin>
@@ -576,6 +577,11 @@
           <version>${version.jmeter.plugin}</version>
         </plugin>
         <plugin>
+          <groupId>com.artofsolving</groupId>
+          <artifactId>jodconverter-maven-plugin</artifactId>
+          <version>${version.jodconverter.plugin}</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jxr-plugin</artifactId>
           <version>${version.jxr.plugin}</version>
@@ -855,7 +861,7 @@
       </build>
     </profile>
     <profile>
-        <id>sources</id>
+      <id>sources</id>
       <activation>
         <property>
           <name>!skip-sources</name>
