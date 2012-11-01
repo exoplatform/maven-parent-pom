@@ -27,6 +27,8 @@ projects.exoplatform.org
 *---------------------------------------------------------*
  {{{/calendar/} eXo Calendar}}
 *---------------------------------------------------------*
+ {{{/integration/} eXo Integration}}
+*---------------------------------------------------------*
  {{{/maven-sandbox-project/} Maven Sandbox Project}}
 *---------------------------------------------------------*
 Available Projects Sites
