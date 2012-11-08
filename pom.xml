@@ -758,11 +758,25 @@
           <groupId>org.wikbook</groupId>
           <artifactId>wikbook.maven</artifactId>
           <version>${version.wikbook.plugin}</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.slf4j</groupId>
+              <artifactId>slf4j-simple</artifactId>
+              <version>1.5.8</version>
+            </dependency>
+          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.wikbook</groupId>
           <artifactId>wikbook.html2pdf</artifactId>
           <version>${version.wikbook.plugin}</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.slf4j</groupId>
+              <artifactId>slf4j-simple</artifactId>
+              <version>1.5.8</version>
+            </dependency>
+          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
