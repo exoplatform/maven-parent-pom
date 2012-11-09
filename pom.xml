@@ -1194,7 +1194,7 @@
     <profile>
       <id>format-pom</id>
       <build>
-        <defaultGoal>com.google.code.sortpom:maven-sortpom-plugin:verify</defaultGoal>
+        <defaultGoal>com.google.code.sortpom:maven-sortpom-plugin:sort</defaultGoal>
       </build>
     </profile>
     <profile>
