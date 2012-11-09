@@ -150,6 +150,7 @@
     <version.selenium.plugin>1.0.1</version.selenium.plugin>
     <version.site.plugin>3.2</version.site.plugin>
     <version.sonar-maven-report.plugin>0.1</version.sonar-maven-report.plugin>
+		<version.sortpom.plugin>2.1.0</version.sortpom.plugin>
     <version.source.plugin>2.2.1</version.source.plugin>
     <version.surefire.plugin>2.12.4</version.surefire.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
@@ -685,6 +686,11 @@
           <version>${version.sonar-maven-report.plugin}</version>
         </plugin>
         <plugin>
+          <groupId>com.google.code.sortpom</groupId>
+          <artifactId>maven-sortpom-plugin</artifactId>
+          <version>${version.sortpom.plugin}</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
           <version>${version.source.plugin}</version>
@@ -1105,6 +1111,15 @@
             </configuration>
           </plugin>
         </plugins>
+      </build>
+    </profile>
+    <!--
+     Reformat POMs
+     -->
+    <profile>
+      <id>format-pom</id>
+      <build>
+        <defaultGoal>com.google.code.sortpom:maven-sortpom-plugin:verify</defaultGoal>
       </build>
     </profile>
     <profile>
