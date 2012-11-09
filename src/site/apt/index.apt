@@ -31,6 +31,8 @@ projects.exoplatform.org
 *---------------------------------------------------------*
  {{{/integration/} eXo Integration}}
 *---------------------------------------------------------*
+ {{{/platform/} eXo Platform}}
+*---------------------------------------------------------*
  {{{/maven-sandbox-project/} Maven Sandbox Project}}
 *---------------------------------------------------------*
 Available Projects Sites
