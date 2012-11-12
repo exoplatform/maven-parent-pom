@@ -150,7 +150,7 @@
     <version.rar.plugin>2.2</version.rar.plugin>
     <version.release.plugin>2.3.2</version.release.plugin>
     <version.resources.plugin>2.6</version.resources.plugin>
-    <version.selenium.plugin>1.0.1</version.selenium.plugin>
+    <version.selenium.plugin>2.3</version.selenium.plugin>
     <version.site.plugin>3.2</version.site.plugin>
     <version.sonar-maven-report.plugin>0.1</version.sonar-maven-report.plugin>
     <version.sortpom.plugin>2.1.0</version.sortpom.plugin>
