@@ -1210,7 +1210,7 @@
      Sort Dependencies - Maven reads dependencies according to the order in the pom-file when compiling. Rearranging the order may affect the compilation output.
      -->
     <profile>
-      <id>reorder-deps</id>
+      <id>sort-deps</id>
       <build>
         <defaultGoal>sortpom:sort</defaultGoal>
         <plugins>
