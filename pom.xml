@@ -1194,7 +1194,35 @@
     <profile>
       <id>format-pom</id>
       <build>
-        <defaultGoal>com.google.code.sortpom:maven-sortpom-plugin:sort</defaultGoal>
+        <defaultGoal>sortpom:sort</defaultGoal>
+        <plugins>
+          <plugin>
+            <groupId>com.google.code.sortpom</groupId>
+            <artifactId>maven-sortpom-plugin</artifactId>
+            <configuration>
+              <createBackupFile>false</createBackupFile>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <!--
+     Sort Dependencies - Maven reads dependencies according to the order in the pom-file when compiling. Rearranging the order may affect the compilation output.
+     -->
+    <profile>
+      <id>reorder-deps</id>
+      <build>
+        <defaultGoal>sortpom:sort</defaultGoal>
+        <plugins>
+          <plugin>
+            <groupId>com.google.code.sortpom</groupId>
+            <artifactId>maven-sortpom-plugin</artifactId>
+            <configuration>
+              <createBackupFile>false</createBackupFile>
+              <sortDependencies>groupId,artifactId</sortDependencies>
+            </configuration>
+          </plugin>
+        </plugins>
       </build>
     </profile>
     <!--
