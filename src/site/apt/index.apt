@@ -33,6 +33,8 @@ projects.exoplatform.org
 *---------------------------------------------------------*
  {{{/platform/} eXo Platform}}
 *---------------------------------------------------------*
+ {{{/platform-tomcat-standalone/} eXo Platform Tomcat Standalone}}
+*---------------------------------------------------------*
  {{{/maven-sandbox-project/} Maven Sandbox Project}}
 *---------------------------------------------------------*
 Available Projects Sites
