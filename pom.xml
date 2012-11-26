@@ -112,7 +112,7 @@
     <version.clirr.plugin>2.5</version.clirr.plugin>
     <version.compiler.plugin>3.0</version.compiler.plugin>
     <version.copy.plugin>0.2.5</version.copy.plugin>
-    <version.dependency.plugin>2.6-SNAPSHOT</version.dependency.plugin>
+    <version.dependency.plugin>2.6</version.dependency.plugin>
     <version.deploy.plugin>2.7</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
     <version.docbkx.plugin>2.0.14</version.docbkx.plugin>
@@ -1004,8 +1004,7 @@
                       <message>Best practice is to always define plugin versions! Plugins must be released released (no SNAPSHOT) and without using keywords RELEASE or LATEST!</message>
                       <banLatest>true</banLatest>
                       <banRelease>true</banRelease>
-                      <!-- Need to fix PAR-167 to reactivate it -->
-                      <banSnapshots>false</banSnapshots>
+                      <banSnapshots>true</banSnapshots>
                       <phases>deploy,site</phases>
                     </requirePluginVersions>
                   </rules>
