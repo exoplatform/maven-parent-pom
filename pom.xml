@@ -1210,7 +1210,7 @@
             <artifactId>maven-sortpom-plugin</artifactId>
             <configuration>
               <createBackupFile>false</createBackupFile>
-              <sortDependencies>groupId,artifactId</sortDependencies>
+              <sortDependencies>scope,groupId,artifactId</sortDependencies>
             </configuration>
           </plugin>
         </plugins>
