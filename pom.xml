@@ -1110,7 +1110,7 @@
             <artifactId>xml-maven-plugin</artifactId>
             <executions>
               <execution>
-                <id>Validate eXo configuration files</id>
+                <id>validate-xml-files</id>
                 <goals>
                   <goal>validate</goal>
                 </goals>
