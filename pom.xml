@@ -833,6 +833,23 @@
           </dependency>
         </dependencies>
       </plugin>
+      <!-- We want to package up license resources in the artifacts produced -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-remote-resources-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>process</goal>
+            </goals>
+            <configuration>
+              <resourceBundles>
+                <resourceBundle>org.exoplatform.resources:exo-artifact-resource-bundle:1-SNAPSHOT</resourceBundle>
+              </resourceBundles>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
   <reporting>
