@@ -210,8 +210,8 @@
     <parsedVersion.majorVersion>N/A</parsedVersion.majorVersion>
     <!-- maven-war-plugin -->
     <useCache>true</useCache>
-    <archiveClasses>true</archiveClasses>
-    <maven.war.attachClasses>true</maven.war.attachClasses>
+    <archiveClasses>false</archiveClasses>
+    <maven.war.attachClasses>false</maven.war.attachClasses>
   </properties>
   <build>
     <extensions>
