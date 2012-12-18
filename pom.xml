@@ -32,8 +32,9 @@
   </organization>
   <licenses>
     <license>
-      <name>agpl</name>
+      <name>GNU Affero General Public License, Version 3.0</name>
       <url>http://www.gnu.org/licenses/agpl-3.0.txt</url>
+      <distribution>repo</distribution>
     </license>
   </licenses>
   <prerequisites>
