@@ -148,7 +148,7 @@
     <version.plugin.plugin>3.2</version.plugin.plugin>
     <version.pmd.plugin>2.7.1</version.pmd.plugin>
     <version.rar.plugin>2.3</version.rar.plugin>
-    <version.release.plugin>2.3.2</version.release.plugin>
+    <version.release.plugin>2.4</version.release.plugin>
     <version.remote-resources.plugin.version>1.4</version.remote-resources.plugin.version>
     <version.resources.plugin>2.6</version.resources.plugin>
     <version.selenium.plugin>2.3</version.selenium.plugin>
