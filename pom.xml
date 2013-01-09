@@ -99,7 +99,7 @@
     <!-- **************** -->
     <!-- Plugins versions -->
     <!-- **************** -->
-    <version.android.plugin>3.4.1</version.android.plugin>
+    <version.android.plugin>3.5.0</version.android.plugin>
     <version.antrun.plugin>1.7</version.antrun.plugin>
     <version.archetype.plugin>2.2</version.archetype.plugin>
     <version.aspectj.plugin>1.4</version.aspectj.plugin>
