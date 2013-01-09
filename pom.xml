@@ -213,6 +213,9 @@
     <useCache>true</useCache>
     <archiveClasses>false</archiveClasses>
     <maven.war.attachClasses>false</maven.war.attachClasses>
+    <!-- Additional properties to activate the compression of already compressed archives - time expensive -->
+    <maven.assembly.recompressZippedFiles>false</maven.assembly.recompressZippedFiles>
+    <maven.war.recompressZippedFiles>false</maven.war.recompressZippedFiles>
   </properties>
   <build>
     <extensions>
@@ -252,6 +255,8 @@
           <configuration>
             <!-- Perfs improvements - PAR-191 -->
             <useJvmChmod>true</useJvmChmod>
+            <!-- Allow to activate/deactivate the recompression of zip files -->
+            <recompressZippedFiles>${maven.assembly.recompressZippedFiles}</recompressZippedFiles>
           </configuration>
         </plugin>
         <plugin>
@@ -754,6 +759,8 @@
             <archiveClasses>${archiveClasses}</archiveClasses>
             <attachClasses>${maven.war.attachClasses}</attachClasses>
             <useCache>${useCache}</useCache>
+            <!-- Allow to activate/deactivate the recompression of zip files -->
+            <recompressZippedFiles>${maven.war.recompressZippedFiles}</recompressZippedFiles>
           </configuration>
         </plugin>
         <plugin>
@@ -1003,6 +1010,11 @@
     <!-- This profile is activated when a project is released. -->
     <profile>
       <id>exo-release</id>
+      <properties>
+        <!-- Additional properties to activate the compression of already compressed archives - time expensive -->
+        <maven.assembly.recompressZippedFiles>true</maven.assembly.recompressZippedFiles>
+        <maven.war.recompressZippedFiles>true</maven.war.recompressZippedFiles>
+      </properties>
       <build>
         <plugins>
           <plugin>
