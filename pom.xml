@@ -841,23 +841,6 @@
           </dependency>
         </dependencies>
       </plugin>
-      <!-- We want to package up license resources in the artifacts produced -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-remote-resources-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>process</goal>
-            </goals>
-            <configuration>
-              <resourceBundles>
-                <resourceBundle>org.exoplatform.resources:exo-artifact-resource-bundle:1-SNAPSHOT</resourceBundle>
-              </resourceBundles>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
   <reporting>
@@ -1011,11 +994,6 @@
     <!-- This profile is activated when a project is released. -->
     <profile>
       <id>exo-release</id>
-      <properties>
-        <!-- Additional properties to activate the compression of already compressed archives - time expensive -->
-        <maven.assembly.recompressZippedFiles>true</maven.assembly.recompressZippedFiles>
-        <maven.war.recompressZippedFiles>true</maven.war.recompressZippedFiles>
-      </properties>
       <build>
         <plugins>
           <plugin>
@@ -1156,8 +1134,30 @@
               </validationSets>
             </configuration>
           </plugin>
+          <!-- We want to package up license resources in the artifacts produced -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-remote-resources-plugin</artifactId>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>process</goal>
+                </goals>
+                <configuration>
+                  <resourceBundles>
+                    <resourceBundle>org.exoplatform.resources:exo-artifact-resource-bundle:1-SNAPSHOT</resourceBundle>
+                  </resourceBundles>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
         </plugins>
       </build>
+      <properties>
+        <!-- Additional properties to activate the compression of already compressed archives - time expensive -->
+        <maven.assembly.recompressZippedFiles>true</maven.assembly.recompressZippedFiles>
+        <maven.war.recompressZippedFiles>true</maven.war.recompressZippedFiles>
+      </properties>
     </profile>
     <!--
     This profile is used to launch integration tests with the failsafe plugin
