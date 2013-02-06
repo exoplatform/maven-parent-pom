@@ -203,6 +203,9 @@
     <gpg.useagent>true</gpg.useagent>
     <!-- maven-gwt-plugin -->
     <gwt.draftCompile>false</gwt.draftCompile>
+    <gwt.compiler.optimizationLevel>0</gwt.compiler.optimizationLevel>
+    <gwt.compiler.disableAggressiveOptimization>true</gwt.compiler.disableAggressiveOptimization>
+    <gwt.style>DETAILED</gwt.style>
     <!-- maven-idea-plugin & maven-eclipse-plugin -->
     <downloadSources>true</downloadSources>
     <!--  maven-javadoc-plugin -->
@@ -1154,6 +1157,9 @@
         <maven.war.recompressZippedFiles>true</maven.war.recompressZippedFiles>
         <!-- GWT optimizations -->
         <gwt.draftCompile>false</gwt.draftCompile>
+        <gwt.compiler.optimizationLevel>9</gwt.compiler.optimizationLevel>
+        <gwt.compiler.disableAggressiveOptimization>false</gwt.compiler.disableAggressiveOptimization>
+        <gwt.style>OBF</gwt.style>
       </properties>
     </profile>
     <!--
