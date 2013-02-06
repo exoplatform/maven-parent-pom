@@ -126,6 +126,7 @@
     <version.exopc.plugin>1.0.5</version.exopc.plugin>
     <version.failsafe.plugin>${version.surefire.plugin}</version.failsafe.plugin>
     <version.findbugs.plugin>2.5.2</version.findbugs.plugin>
+    <version.gmaven.plugin>1.5</version.gmaven.plugin>
     <version.gpg.plugin>1.4</version.gpg.plugin>
     <version.gwt.plugin>2.5.0</version.gwt.plugin>
     <version.idea.plugin>2.2</version.idea.plugin>
@@ -444,6 +445,11 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>findbugs-maven-plugin</artifactId>
           <version>${version.findbugs.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.gmaven</groupId>
+          <artifactId>gmaven-plugin</artifactId>
+          <version>${version.gmaven.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
