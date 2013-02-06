@@ -201,6 +201,8 @@
     <maven-scm-provider-svnjava.version>2.0.5</maven-scm-provider-svnjava.version>
     <!-- maven-gpg-plugin -->
     <gpg.useagent>true</gpg.useagent>
+    <!-- maven-gwt-plugin -->
+    <gwt.draftCompile>false</gwt.draftCompile>
     <!-- maven-idea-plugin & maven-eclipse-plugin -->
     <downloadSources>true</downloadSources>
     <!--  maven-javadoc-plugin -->
@@ -1150,6 +1152,8 @@
         <!-- Additional properties to activate the compression of already compressed archives - time expensive -->
         <maven.assembly.recompressZippedFiles>true</maven.assembly.recompressZippedFiles>
         <maven.war.recompressZippedFiles>true</maven.war.recompressZippedFiles>
+        <!-- GWT optimizations -->
+        <gwt.draftCompile>false</gwt.draftCompile>
       </properties>
     </profile>
     <!--
