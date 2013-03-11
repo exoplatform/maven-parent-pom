@@ -144,7 +144,7 @@
     <!-- PAR-222 : jdocbook 2.3.6+ has a perf issue. See MPJDOCBOOK-84 -->
     <version.jdocbook.plugin>2.3.5</version.jdocbook.plugin>
     <version.jibx.plugin>1.2.4.5</version.jibx.plugin>
-    <version.jmeter.plugin>1.7.0</version.jmeter.plugin>
+    <version.jmeter.plugin>1.8.0</version.jmeter.plugin>
     <version.jodconverter.plugin>2.2.1</version.jodconverter.plugin>
     <version.jxr.plugin>2.3</version.jxr.plugin>
     <version.lesscss.plugin>1.3.0</version.lesscss.plugin>
