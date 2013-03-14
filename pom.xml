@@ -179,7 +179,7 @@
     <!-- PAR-155 : Produce project sources package distribution -->
     <version.apache-source-release-assembly-descriptor>1.0.4</version.apache-source-release-assembly-descriptor>
     <!-- PAR-92 : Bundle used to manage file headers -->
-    <version.exo-lgpl-license-resource-bundle>1-SNAPSHOT</version.exo-lgpl-license-resource-bundle>
+    <version.exo-lgpl-license-resource-bundle>1</version.exo-lgpl-license-resource-bundle>
     <!-- ************** -->
     <!-- Build settings -->
     <!-- ************** -->
