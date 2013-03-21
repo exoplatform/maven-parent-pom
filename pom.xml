@@ -131,7 +131,7 @@
     <version.findbugs.plugin>2.5.2</version.findbugs.plugin>
     <version.gmaven.plugin>1.5</version.gmaven.plugin>
     <version.gpg.plugin>1.4</version.gpg.plugin>
-		<!-- Must be kept in sync with maven-depmgt-pom GWT version -->
+    <!-- Must be kept in sync with maven-depmgt-pom GWT version -->
     <version.gwt.plugin>2.5.1</version.gwt.plugin>
     <version.idea.plugin>2.2</version.idea.plugin>
     <version.install.plugin>2.4</version.install.plugin>
@@ -147,8 +147,9 @@
     <version.jibx.plugin>1.2.5</version.jibx.plugin>
     <version.jmeter.plugin>1.8.0</version.jmeter.plugin>
     <version.jodconverter.plugin>2.2.1</version.jodconverter.plugin>
+    <version.jstools.plugin>0.7</version.jstools.plugin>
     <version.jxr.plugin>2.3</version.jxr.plugin>
-		<!-- PAR-213 : Downgrade to lesscss 1.3.0. platformui doesn't build with 1.3.3 -->
+    <!-- PAR-213 : Downgrade to lesscss 1.3.0. platformui doesn't build with 1.3.3 -->
     <version.lesscss.plugin>1.3.0</version.lesscss.plugin>
     <version.license.plugin>1.9.0</version.license.plugin>
     <version.project-info-reports.plugin>2.6</version.project-info-reports.plugin>
@@ -602,6 +603,11 @@
           <groupId>com.artofsolving</groupId>
           <artifactId>jodconverter-maven-plugin</artifactId>
           <version>${version.jodconverter.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>gr.abiss.mvn.plugins</groupId>
+          <artifactId>maven-jstools-plugin</artifactId>
+          <version>${version.jstools.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
