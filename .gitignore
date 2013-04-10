@@ -52,3 +52,4 @@ target/
 
 # Misc
 *.swp
+.java-version
