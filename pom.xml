@@ -179,7 +179,7 @@
     <version.animal-sniffer.enforcer-rule>1.8</version.animal-sniffer.enforcer-rule>
     <version.wagon-webdav-jackrabbit>2.2</version.wagon-webdav-jackrabbit>
     <!-- PAR-193 : performances boost workaround -->
-    <version.plexus-utils>3.0.8</version.plexus-utils>
+    <version.plexus-utils>3.0.10</version.plexus-utils>
     <!-- PAR-155 : Produce project sources package distribution -->
     <version.apache-source-release-assembly-descriptor>1.0.4</version.apache-source-release-assembly-descriptor>
     <!-- PAR-92 : Bundle used to manage file headers -->
