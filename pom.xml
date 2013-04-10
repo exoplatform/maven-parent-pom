@@ -161,6 +161,7 @@
     <version.remote-resources.plugin.version>1.4</version.remote-resources.plugin.version>
     <version.resources.plugin>2.6</version.resources.plugin>
     <version.selenium.plugin>2.3</version.selenium.plugin>
+    <version.shade.plugin>2.0</version.shade.plugin>
     <version.site.plugin>3.2</version.site.plugin>
     <version.sonar-maven-report.plugin>0.1</version.sonar-maven-report.plugin>
     <version.sortpom.plugin>2.1.0</version.sortpom.plugin>
@@ -809,6 +810,19 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>${version.site.plugin}</version>
+          <dependencies>
+            <!-- PAR-193 : To be removed when the plugin will have a version of plexus-utils >= 3.0.7 -->
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-utils</artifactId>
+              <version>${version.plexus-utils}</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-shade-plugin</artifactId>
+          <version>${version.shade.plugin}</version>
           <dependencies>
             <!-- PAR-193 : To be removed when the plugin will have a version of plexus-utils >= 3.0.7 -->
             <dependency>
