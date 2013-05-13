@@ -208,6 +208,8 @@
     <animal-sniffer.signature.groupId>org.codehaus.mojo.signature</animal-sniffer.signature.groupId>
     <animal-sniffer.signature.artifactId>java16</animal-sniffer.signature.artifactId>
     <animal-sniffer.signature.version>1.0</animal-sniffer.signature.version>
+    <!-- Extra enforcer rules -->
+    <extra-enforcer-rules.version>1.0-alpha-4</extra-enforcer-rules.version>
     <!-- The version of maven-scm-provider-svnjava to use -->
     <maven-scm-provider-svnjava.version>2.0.5</maven-scm-provider-svnjava.version>
     <!-- maven-gpg-plugin -->
@@ -434,6 +436,18 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
           <version>${version.enforcer.plugin}</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>extra-enforcer-rules</artifactId>
+              <version>${extra-enforcer-rules.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>animal-sniffer-enforcer-rule</artifactId>
+              <version>${version.animal-sniffer.enforcer-rule}</version>
+            </dependency>
+          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -1197,13 +1211,6 @@
                 </configuration>
               </execution>
             </executions>
-            <dependencies>
-              <dependency>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>animal-sniffer-enforcer-rule</artifactId>
-                <version>${version.animal-sniffer.enforcer-rule}</version>
-              </dependency>
-            </dependencies>
           </plugin>
           <!-- 
             Generates Javadoc
