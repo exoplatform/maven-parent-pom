@@ -102,7 +102,7 @@
     <!-- **************** -->
     <!-- Plugins versions -->
     <!-- **************** -->
-    <version.android.plugin>3.5.2</version.android.plugin>
+    <version.android.plugin>3.5.3</version.android.plugin>
     <version.antrun.plugin>1.7</version.antrun.plugin>
     <version.archetype.plugin>2.2</version.archetype.plugin>
     <version.aspectj.plugin>1.4</version.aspectj.plugin>
