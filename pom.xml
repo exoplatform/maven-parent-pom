@@ -1191,7 +1191,7 @@
                       <message>Best practice is to always define plugin versions! Plugins must be released released (no SNAPSHOT) and without using keywords RELEASE or LATEST!</message>
                       <banLatest>true</banLatest>
                       <banRelease>true</banRelease>
-                      <banSnapshots>false</banSnapshots>
+                      <banSnapshots>true</banSnapshots>
                       <phases>deploy,site</phases>
                     </requirePluginVersions>
                   </rules>
