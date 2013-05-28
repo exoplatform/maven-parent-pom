@@ -116,7 +116,7 @@
     <version.clirr.plugin>2.5</version.clirr.plugin>
     <version.compiler.plugin>3.1</version.compiler.plugin>
     <version.copy.plugin>0.2.5</version.copy.plugin>
-    <version.dependency.plugin>2.8-SNAPSHOT</version.dependency.plugin>
+    <version.dependency.plugin>2.8</version.dependency.plugin>
     <version.deploy.plugin>2.7</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
     <version.docbkx.plugin>2.0.14</version.docbkx.plugin>
