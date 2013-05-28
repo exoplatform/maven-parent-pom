@@ -151,7 +151,8 @@
     <version.jstools.plugin>0.7</version.jstools.plugin>
     <version.jxr.plugin>2.3</version.jxr.plugin>
     <version.lesscss.plugin>1.3.3</version.lesscss.plugin>
-    <version.license.plugin>1.9.0</version.license.plugin>
+    <version.license.plugin>1.5</version.license.plugin>
+    <version.mycila-license.plugin>1.9.0</version.mycila-license.plugin>
     <version.project-info-reports.plugin>2.7</version.project-info-reports.plugin>
     <version.plexus.plugin>1.3.8</version.plexus.plugin>
     <version.plugin.plugin>3.2</version.plugin.plugin>
@@ -645,9 +646,15 @@
           <version>${version.lesscss.plugin}</version>
         </plugin>
         <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>${version.license.plugin}</version>
+        </plugin>
+        <!-- It should be merged in the mojo plugin -->
+        <plugin>
           <groupId>com.mycila.maven-license-plugin</groupId>
           <artifactId>maven-license-plugin</artifactId>
-          <version>${version.license.plugin}</version>
+          <version>${version.mycila-license.plugin}</version>
           <!-- Add a dependency since this is where the maven-license-plugin plugin will find the license-header.txt file -->
           <dependencies>
             <dependency>
