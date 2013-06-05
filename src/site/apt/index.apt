@@ -52,7 +52,9 @@ projects.exoplatform.org
 *---------------------------------------------------------*
  {{{/platform/} eXo Platform}}
 *---------------------------------------------------------*
- {{{/platform-tomcat-standalone/} eXo Platform Tomcat Standalone}}
+ {{{/plf-public-distributions/} eXo Platform Public Distributions}}
+*---------------------------------------------------------*
+ {{{/plf-private-distributions/} eXo Platform Private Distributions}}
 *---------------------------------------------------------*
  {{{/maven-sandbox-project/} Maven Sandbox Project}}
 *---------------------------------------------------------*
