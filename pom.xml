@@ -134,7 +134,7 @@
     <version.gpg.plugin>1.4</version.gpg.plugin>
     <!-- Must be kept in sync with maven-depmgt-pom GWT version -->
     <version.gwt.plugin>2.5.1</version.gwt.plugin>
-    <version.idea.plugin>2.2</version.idea.plugin>
+    <version.idea.plugin>2.2.1</version.idea.plugin>
     <version.install.plugin>2.4</version.install.plugin>
     <version.invoker.plugin>1.8</version.invoker.plugin>
     <version.jar.plugin>2.4</version.jar.plugin>
