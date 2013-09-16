@@ -139,7 +139,7 @@
     <version.invoker.plugin>1.8</version.invoker.plugin>
     <version.jar.plugin>2.4</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
-    <version.javadoc.plugin>2.9</version.javadoc.plugin>
+    <version.javadoc.plugin>2.9.1</version.javadoc.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.jaxb2.plugin>1.5</version.jaxb2.plugin>
     <version.jdepend.plugin>2.0-beta-2</version.jdepend.plugin>
