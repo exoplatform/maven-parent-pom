@@ -169,7 +169,7 @@
     <version.source.plugin>2.2.1</version.source.plugin>
     <version.surefire.plugin>2.16</version.surefire.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
-    <version.versions.plugin>2.0</version.versions.plugin>
+    <version.versions.plugin>2.1</version.versions.plugin>
     <version.war.plugin>2.4</version.war.plugin>
     <version.wikbook.plugin>0.9.45</version.wikbook.plugin>
     <version.xml.plugin>1.0</version.xml.plugin>
