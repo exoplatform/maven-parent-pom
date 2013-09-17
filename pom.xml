@@ -179,7 +179,7 @@
     <!-- Others versions -->
     <!-- *************** -->
     <version.animal-sniffer.enforcer-rule>1.9</version.animal-sniffer.enforcer-rule>
-    <version.wagon-webdav-jackrabbit>2.2</version.wagon-webdav-jackrabbit>
+    <version.wagon>2.5</version.wagon>
     <!-- PAR-193 : performances boost workaround -->
     <version.plexus-utils>3.0.15</version.plexus-utils>
     <!-- PAR-155 : Produce project sources package distribution -->
@@ -245,7 +245,17 @@
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-webdav-jackrabbit</artifactId>
-        <version>${version.wagon-webdav-jackrabbit}</version>
+        <version>${version.wagon}</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-file</artifactId>
+        <version>${version.wagon}</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-http</artifactId>
+        <version>${version.wagon}</version>
       </extension>
     </extensions>
     <pluginManagement>
