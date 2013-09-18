@@ -210,7 +210,7 @@
     <animal-sniffer.signature.artifactId>java16</animal-sniffer.signature.artifactId>
     <animal-sniffer.signature.version>1.1</animal-sniffer.signature.version>
     <!-- Extra enforcer rules -->
-    <extra-enforcer-rules.version>1.0-alpha-4</extra-enforcer-rules.version>
+    <extra-enforcer-rules.version>1.0-beta-1</extra-enforcer-rules.version>
     <!-- The version of maven-scm-provider-svnjava to use -->
     <maven-scm-provider-svnjava.version>2.0.5</maven-scm-provider-svnjava.version>
     <!-- gmaven-plugin -->
