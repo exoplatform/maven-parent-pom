@@ -212,7 +212,7 @@
     <!-- Extra enforcer rules -->
     <extra-enforcer-rules.version>1.0-beta-1</extra-enforcer-rules.version>
     <!-- The version of maven-scm-provider-svnjava to use -->
-    <maven-scm-provider-svnjava.version>2.0.5</maven-scm-provider-svnjava.version>
+    <maven-scm-provider-svnjava.version>2.0.6</maven-scm-provider-svnjava.version>
     <!-- gmaven-plugin -->
     <gmaven-plugin.providerSelection>2.0</gmaven-plugin.providerSelection>
     <!-- maven-gpg-plugin -->
