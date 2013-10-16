@@ -242,6 +242,8 @@
     <!-- ************************ -->
     <!-- Sonar/Reporting settings -->
     <!-- ************************ -->
+    <sonar.java.target>${maven.compiler.target}</sonar.java.target>
+    <sonar.java.source>${maven.compiler.source}</sonar.java.source>
     <!-- Sonar/Jacoco integration. Note that these properties need to be defined outside the "coverage" profile
          because we want to be to able to execute mvn sonar:sonar without passing a profile -->
     <!-- Tells Sonar to use jacoco for coverage results -->
