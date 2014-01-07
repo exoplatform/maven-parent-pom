@@ -105,7 +105,7 @@
     <version.android.plugin>3.7.0</version.android.plugin>
     <version.antrun.plugin>1.7</version.antrun.plugin>
     <version.archetype.plugin>2.2</version.archetype.plugin>
-    <version.aspectj.plugin>1.4</version.aspectj.plugin>
+    <version.aspectj.plugin>1.6</version.aspectj.plugin>
     <version.assembly.plugin>2.4</version.assembly.plugin>
     <version.buildhelper.plugin>1.8</version.buildhelper.plugin>
     <version.buildnumber.plugin>1.2</version.buildnumber.plugin>
