@@ -113,7 +113,7 @@
     <version.clean.plugin>2.5</version.clean.plugin>
     <version.changes.plugin>2.9</version.changes.plugin>
     <version.checkstyle.plugin>2.11</version.checkstyle.plugin>
-    <version.clirr.plugin>2.5</version.clirr.plugin>
+    <version.clirr.plugin>2.6.1</version.clirr.plugin>
     <version.compiler.plugin>3.1</version.compiler.plugin>
     <version.copy.plugin>0.2.5</version.copy.plugin>
     <version.dependency.plugin>2.8</version.dependency.plugin>
