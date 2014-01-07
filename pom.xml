@@ -211,6 +211,8 @@
     <animal-sniffer.signature.version>1.1</animal-sniffer.signature.version>
     <!-- Extra enforcer rules -->
     <extra-enforcer-rules.version>1.0-beta-1</extra-enforcer-rules.version>
+    <!-- This version is necessary for use with git version 1.8.5 - PAR-286-->
+	<maven-scm-provider-gitexe.version>1.8.1</maven-scm-provider-gitexe.version>
     <!-- The version of maven-scm-provider-svnjava to use -->
     <maven-scm-provider-svnjava.version>2.0.6</maven-scm-provider-svnjava.version>
     <!-- gmaven-plugin -->
@@ -829,6 +831,12 @@
               <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
               <artifactId>maven-scm-provider-svnjava</artifactId>
               <version>${maven-scm-provider-svnjava.version}</version>
+            </dependency>
+            <dependency>
+               <groupId>org.apache.maven.scm</groupId>
+               <artifactId>maven-scm-provider-gitexe</artifactId>
+               <!-- This version is necessary for use with git version 1.8.5 - PAR-286-->
+               <version>${maven-scm-provider-gitexe.version}</version>
             </dependency>
           </dependencies>
           <configuration>
