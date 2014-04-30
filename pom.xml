@@ -179,7 +179,7 @@
     <!-- Others versions -->
     <!-- *************** -->
     <version.animal-sniffer.enforcer-rule>1.9</version.animal-sniffer.enforcer-rule>
-    <version.wagon>2.5</version.wagon>
+    <version.wagon>2.6</version.wagon>
     <!-- PAR-193 : performances boost workaround -->
     <version.plexus-utils>3.0.16</version.plexus-utils>
     <!-- PAR-155 : Produce project sources package distribution -->
