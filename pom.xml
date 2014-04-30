@@ -158,7 +158,7 @@
     <version.plugin.plugin>3.2</version.plugin.plugin>
     <version.pmd.plugin>3.1</version.pmd.plugin>
     <version.rar.plugin>2.3</version.rar.plugin>
-    <version.release.plugin>2.4.2</version.release.plugin>
+    <version.release.plugin>2.5</version.release.plugin>
     <version.remote-resources.plugin.version>1.5</version.remote-resources.plugin.version>
     <version.resources.plugin>2.6</version.resources.plugin>
     <version.selenium.plugin>2.3</version.selenium.plugin>
@@ -211,8 +211,6 @@
     <animal-sniffer.signature.version>1.1</animal-sniffer.signature.version>
     <!-- Extra enforcer rules -->
     <extra-enforcer-rules.version>1.0-beta-2</extra-enforcer-rules.version>
-    <!-- This version is necessary for use with git version 1.8.5 - PAR-286-->
-	<maven-scm-provider-gitexe.version>1.8.1</maven-scm-provider-gitexe.version>
     <!-- The version of maven-scm-provider-svnjava to use -->
     <maven-scm-provider-svnjava.version>2.1.0</maven-scm-provider-svnjava.version>
     <!-- gmaven-plugin -->
@@ -831,12 +829,6 @@
               <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
               <artifactId>maven-scm-provider-svnjava</artifactId>
               <version>${maven-scm-provider-svnjava.version}</version>
-            </dependency>
-            <dependency>
-               <groupId>org.apache.maven.scm</groupId>
-               <artifactId>maven-scm-provider-gitexe</artifactId>
-               <!-- This version is necessary for use with git version 1.8.5 - PAR-286-->
-               <version>${maven-scm-provider-gitexe.version}</version>
             </dependency>
           </dependencies>
           <configuration>
