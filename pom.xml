@@ -137,6 +137,7 @@
     <version.idea.plugin>2.2.1</version.idea.plugin>
     <version.install.plugin>2.5.1</version.install.plugin>
     <version.invoker.plugin>1.8</version.invoker.plugin>
+    <version.jacoco.plugin>0.7.0.201403182114</version.jacoco.plugin>
     <version.jar.plugin>2.4</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
     <version.javadoc.plugin>2.9.1</version.javadoc.plugin>
@@ -246,8 +247,6 @@
          because we want to be to able to execute mvn sonar:sonar without passing a profile -->
     <!-- Tells Sonar to use jacoco for coverage results -->
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-    <!-- Jacoco version to use -->
-    <jacoco.version>0.6.4.201312101107</jacoco.version>
     <!-- The Sonar Jacoco Listener for JUnit to extract coverage details per test -->
     <sonar-jacoco-listeners.version>2.0</sonar-jacoco-listeners.version>
     <!-- Don't let Sonar execute tests. We will ask it to Maven -->
@@ -1438,7 +1437,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>${jacoco.version}</version>
+            <version>${version.jacoco.plugin}</version>
             <executions>
               <!-- Prepares a variable, jacoco.agent.ut.arg, that contains the info to be passed to the JVM hosting the code
                    being tested. -->
