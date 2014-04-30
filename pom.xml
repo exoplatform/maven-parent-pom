@@ -181,7 +181,7 @@
     <version.animal-sniffer.enforcer-rule>1.11</version.animal-sniffer.enforcer-rule>
     <version.wagon>2.6</version.wagon>
     <!-- PAR-193 : performances boost workaround -->
-    <version.plexus-utils>3.0.16</version.plexus-utils>
+    <version.plexus-utils>3.0.17</version.plexus-utils>
     <!-- PAR-155 : Produce project sources package distribution -->
     <version.apache-source-release-assembly-descriptor>1.0.4</version.apache-source-release-assembly-descriptor>
     <!-- PAR-92 : Bundle used to manage file headers -->
@@ -403,14 +403,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-ear-plugin</artifactId>
           <version>${version.ear.plugin}</version>
-          <dependencies>
-            <!-- PAR-193 : To be removed when the plugin will have a version of plexus-utils >= 3.0.7 -->
-            <dependency>
-              <groupId>org.codehaus.plexus</groupId>
-              <artifactId>plexus-utils</artifactId>
-              <version>${version.plexus-utils}</version>
-            </dependency>
-          </dependencies>
           <configuration>
             <archive>
               <manifest>
@@ -539,14 +531,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
           <version>${version.gpg.plugin}</version>
-          <dependencies>
-            <!-- PAR-193 : To be removed when the plugin will have a version of plexus-utils >= 3.0.7 -->
-            <dependency>
-              <groupId>org.codehaus.plexus</groupId>
-              <artifactId>plexus-utils</artifactId>
-              <version>${version.plexus-utils}</version>
-            </dependency>
-          </dependencies>
           <configuration>
             <passphrase>${gpg.passphrase}</passphrase>
             <useAgent>${gpg.useagent}</useAgent>
