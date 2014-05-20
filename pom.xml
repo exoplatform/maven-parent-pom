@@ -1089,18 +1089,19 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changes-plugin</artifactId>
         <version>${version.changes.plugin}</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>jira-report</report>
+            </reports>
+          </reportSet>
+        </reportSets>
         <configuration>
-          <issueManagementSystems>
-            <issueManagementSystem>JIRA</issueManagementSystem>
-          </issueManagementSystems>
           <maxEntries>1000</maxEntries>
           <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
-          <useJql>true</useJql>
           <onlyCurrentVersion>true</onlyCurrentVersion>
           <columnNames>Type,Key,Summary,Assignee,Status,Resolution,Fix Version</columnNames>
           <sortColumnNames>Type,Key DESC</sortColumnNames>
-          <resolutionIds>Unresolved,Fixed,Won't Fix,Duplicate,Incomplete,Cannot Reproduce</resolutionIds>
-          <statusIds>Resolved,Closed</statusIds>
         </configuration>
       </plugin>
       <plugin>
