@@ -36,6 +36,8 @@ projects.exoplatform.org
 *---------------------------------------------------------*
  {{{/maven-depmgt-pom/} eXo Dependency Management POM}}
 *---------------------------------------------------------*
+ {{{/platform-ui/} eXo Platform UI}}
+*---------------------------------------------------------*
  {{{/commons/} eXo Commons}} 
 *---------------------------------------------------------*
  {{{/ecms/} eXo Content}}
@@ -56,6 +58,12 @@ projects.exoplatform.org
 *---------------------------------------------------------*
  {{{/plf-private-distributions/} eXo Platform Private Distributions}}
 *---------------------------------------------------------*
+ {{{/exo-mobile-android/} eXo Android Application}}
+*---------------------------------------------------------*
+ {{{/addons-manager/} eXo Platform Add-ons Manager}}
+*---------------------------------------------------------*
  {{{/maven-sandbox-project/} Maven Sandbox Project}}
+*---------------------------------------------------------*
+ {{{/acceptance/} Acceptance v2}}
 *---------------------------------------------------------*
 Available Projects Sites
