@@ -1406,7 +1406,6 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
-              <argLine>${jacoco.agent.ut.arg}</argLine>
               <!-- Specific to generate mapping between tests and covered code -->
               <properties>
                 <property>
@@ -1420,7 +1419,6 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
             <configuration>
-              <argLine>-Xmx1024m -XX:MaxPermSize=256m ${jacoco.agent.it.arg}</argLine>
               <!-- Specific to generate mapping between tests and covered code -->
               <properties>
                 <property>
@@ -1437,8 +1435,6 @@
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>${version.jacoco.plugin}</version>
             <executions>
-              <!-- Prepares a variable, jacoco.agent.ut.arg, that contains the info to be passed to the JVM hosting the code
-                   being tested. -->
               <execution>
                 <id>prepare-ut-agent</id>
                 <phase>process-test-classes</phase>
@@ -1447,7 +1443,6 @@
                 </goals>
                 <configuration>
                   <destFile>${sonar.jacoco.reportPath}</destFile>
-                  <propertyName>jacoco.agent.ut.arg</propertyName>
                   <append>true</append>
                 </configuration>
               </execution>
@@ -1461,7 +1456,6 @@
                 </goals>
                 <configuration>
                   <destFile>${sonar.jacoco.itReportPath}</destFile>
-                  <propertyName>jacoco.agent.it.arg</propertyName>
                   <append>true</append>
                 </configuration>
               </execution>
