@@ -356,6 +356,11 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>clirr-maven-plugin</artifactId>
           <version>${version.clirr.plugin}</version>
+          <configuration>
+            <includes>
+              <include>**/exoplatform/**</include>
+            </includes>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -1075,10 +1080,9 @@
         <artifactId>clirr-maven-plugin</artifactId>
         <version>${version.clirr.plugin}</version>
         <configuration>
-          <!-- There is a know incompatibility between clirr and jibx -->
-          <excludes>
-            <exclude>**/JiBX_*</exclude>
-          </excludes>
+          <includes>
+            <include>**/exoplatform/**</include>
+          </includes>
         </configuration>
       </plugin>
       <plugin>
@@ -1240,13 +1244,6 @@
                 </configuration>
               </execution>
             </executions>
-          </plugin>
-          <!--
-            Checks backward compatibility is maintained
-          -->
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>clirr-maven-plugin</artifactId>
           </plugin>
           <!-- Create a source-release artifact that contains the fully buildable
                project directory source structure. This is the artifact which is
@@ -1491,12 +1488,12 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>clirr-maven-plugin</artifactId>
-            <configuration>
-              <failOnError>false</failOnError>
-            </configuration>
           </plugin>
         </plugins>
       </build>
+      <properties>
+        <failOnError>false</failOnError>
+      </properties>
     </profile>
     <!--
      Reformat POMs
