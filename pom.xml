@@ -1262,6 +1262,7 @@
                     <descriptorRef>source-release</descriptorRef>
                   </descriptorRefs>
                   <tarLongFileMode>gnu</tarLongFileMode>
+                  <appendAssemblyId>true</appendAssemblyId>
                 </configuration>
               </execution>
             </executions>
