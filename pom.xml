@@ -137,7 +137,7 @@
     <version.idea.plugin>2.2.1</version.idea.plugin>
     <version.install.plugin>2.5.1</version.install.plugin>
     <version.invoker.plugin>1.8</version.invoker.plugin>
-    <version.jacoco.plugin>0.7.0.201403182114</version.jacoco.plugin>
+    <version.jacoco.plugin>0.7.1.201405082137</version.jacoco.plugin>
     <version.jar.plugin>2.4</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
     <version.javadoc.plugin>2.9.1</version.javadoc.plugin>
