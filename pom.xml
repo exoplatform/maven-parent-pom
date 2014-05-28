@@ -129,7 +129,7 @@
     <version.exobuild.plugin>1.2.2</version.exobuild.plugin>
     <version.exopc.plugin>1.0.5</version.exopc.plugin>
     <version.failsafe.plugin>${version.surefire.plugin}</version.failsafe.plugin>
-    <version.findbugs.plugin>2.5.3</version.findbugs.plugin>
+    <version.findbugs.plugin>2.5.4</version.findbugs.plugin>
     <version.gmaven.plugin>1.5</version.gmaven.plugin>
     <version.gpg.plugin>1.5</version.gpg.plugin>
     <!-- Must be kept in sync with maven-depmgt-pom GWT version -->
