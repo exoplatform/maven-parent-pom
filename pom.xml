@@ -1096,11 +1096,14 @@
           </reportSet>
         </reportSets>
         <configuration>
+          <useJql>true</useJql>
           <maxEntries>1000</maxEntries>
           <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
           <onlyCurrentVersion>true</onlyCurrentVersion>
-          <columnNames>Type,Key,Summary,Assignee,Status,Resolution,Fix Version</columnNames>
-          <sortColumnNames>Type,Key DESC</sortColumnNames>
+          <statusIds>Resolved,Closed,Done</statusIds>
+          <resolutionIds>Fixed,Won't Fix,Duplicate,Incomplete,Cannot Reproduce,Workaround,Normal Behavior,Done</resolutionIds>
+          <columnNames>Priority,Type,Key,Summary,Component,Status,Resolution,Fix Version</columnNames>
+          <sortColumnNames>Fix Version DESC,Type DESC,Priority DESC</sortColumnNames>
         </configuration>
       </plugin>
       <plugin>
