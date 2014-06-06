@@ -824,9 +824,6 @@
             <useReleaseProfile>false</useReleaseProfile>
             <autoVersionSubmodules>true</autoVersionSubmodules>
             <arguments>-Pexo-release ${arguments}</arguments>
-            <providerImplementations>
-              <svn>javasvn</svn>
-            </providerImplementations>
           </configuration>
         </plugin>
         <plugin>
@@ -1034,9 +1031,6 @@
               <revisionOnScmFailure>no_revision</revisionOnScmFailure>
               <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
               <timestampFormat>{0, date,yyyyMMdd}</timestampFormat>
-              <providerImplementations>
-                <svn>javasvn</svn>
-              </providerImplementations>
             </configuration>
           </execution>
         </executions>
