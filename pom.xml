@@ -18,14 +18,14 @@
     You should have received a copy of the GNU Lesser General Public
     License along with eXo parent POM; if not, write to the Free
     Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
-    02110-1301 USA, or see <http://www.gnu.org/licenses/>.
+    02110-1301 USA, or see <http://www.gnu.org/licenses />.
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.exoplatform</groupId>
   <artifactId>maven-parent-pom</artifactId>
-  <version>13-SNAPSHOT</version>
+  <version>13</version>
   <packaging>pom</packaging>
   <name>eXo parent POM</name>
   <description>Provides default project configuration for eXo projects</description>
@@ -48,7 +48,7 @@
   <scm>
     <connection>scm:git:git://github.com/exoplatform/maven-parent-pom.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/maven-parent-pom.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>13</tag>
     <url>https://fisheye.exoplatform.org/browse/maven-parent-pom</url>
   </scm>
   <issueManagement>
