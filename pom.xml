@@ -3,20 +3,22 @@
 
     Copyright (C) 2003-2014 eXo Platform SAS.
 
-    This is free software; you can redistribute it and/or modify it
+    This file is part of eXo parent POM.
+
+    eXo parent POM is free software; you can redistribute it and/or modify it
     under the terms of the GNU Lesser General Public License as
     published by the Free Software Foundation; either version 3 of
     the License, or (at your option) any later version.
 
-    This software is distributed in the hope that it will be useful,
+    eXo parent POM software is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
     Lesser General Public License for more details.
 
     You should have received a copy of the GNU Lesser General Public
-    License along with this software; if not, write to the Free
+    License along with eXo parent POM; if not, write to the Free
     Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
-    02110-1301 USA, or see the FSF site: http://www.fsf.org.
+    02110-1301 USA, or see <http://www.gnu.org/licenses/>.
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -187,7 +189,7 @@
     <!-- PAR-155 : Produce project sources package distribution -->
     <version.apache-source-release-assembly-descriptor>1.0.4</version.apache-source-release-assembly-descriptor>
     <!-- PAR-92 : Bundle used to manage file headers -->
-    <version.exo-lgpl-license-resource-bundle>1</version.exo-lgpl-license-resource-bundle>
+    <version.exo-lgpl-license-resource-bundle>2</version.exo-lgpl-license-resource-bundle>
     <!-- ************** -->
     <!-- Build settings -->
     <!-- ************** -->
@@ -694,7 +696,7 @@
             </dependency>
           </dependencies>
           <configuration>
-            <header>license-header.txt</header>
+            <header>org/exoplatform/resources/license-header.txt</header>
             <properties>
               <!-- Values to be substituted in template -->
               <h_inceptionYear>${project.inceptionYear}</h_inceptionYear>
@@ -703,95 +705,15 @@
             </properties>
             <failIfMissing>false</failIfMissing>
             <strictCheck>true</strictCheck>
-            <!-- Our Java isn't the default so we need to change the mapping -->
-            <mapping>
-              <java>SLASHSTAR_STYLE</java>
-            </mapping>
+            <!-- Our Java isn't the default so we need to change the mapping (We use /* and not /**) -->
+            <headerDefinitions>
+              <headerDefinition>org/exoplatform/resources/javadoc_style.xml</headerDefinition>
+            </headerDefinitions>
             <!-- We're only interested in checking our sources and our POMs -->
             <includes>
               <include>src/**</include>
               <include>pom.xml</include>
             </includes>
-            <!-- Default excludes are excluding POMs -->
-            <useDefaultExcludes>false</useDefaultExcludes>
-            <excludes>
-              <exclude>**/*~</exclude>
-              <exclude>**/#*#</exclude>
-              <exclude>**/.#*</exclude>
-              <exclude>**/%*%</exclude>
-              <exclude>**/._*</exclude>
-              <exclude>**/.repository/**</exclude>
-              <exclude>**/CVS</exclude>
-              <exclude>**/CVS/**</exclude>
-              <exclude>**/.cvsignore</exclude>
-              <exclude>**/RCS</exclude>
-              <exclude>**/RCS/**</exclude>
-              <exclude>**/SCCS</exclude>
-              <exclude>**/SCCS/**</exclude>
-              <exclude>**/vssver.scc</exclude>
-              <exclude>**/.svn</exclude>
-              <exclude>**/.svn/**</exclude>
-              <exclude>**/.arch-ids</exclude>
-              <exclude>**/.arch-ids/**</exclude>
-              <exclude>**/.bzr</exclude>
-              <exclude>**/.bzr/**</exclude>
-              <exclude>**/.MySCMServerInfo</exclude>
-              <exclude>**/.DS_Store</exclude>
-              <exclude>**/.metadata</exclude>
-              <exclude>**/.metadata/**</exclude>
-              <exclude>**/.hg</exclude>
-              <exclude>**/.hg/**</exclude>
-              <exclude>**/.git</exclude>
-              <exclude>**/.git/**</exclude>
-              <exclude>**/.gitignore</exclude>
-              <exclude>**/BitKeeper</exclude>
-              <exclude>**/BitKeeper/**</exclude>
-              <exclude>**/ChangeSet</exclude>
-              <exclude>**/ChangeSet/**</exclude>
-              <exclude>**/_darcs</exclude>
-              <exclude>**/_darcs/**</exclude>
-              <exclude>**/.darcsrepo</exclude>
-              <exclude>**/.darcsrepo/**</exclude>
-              <exclude>**/-darcs-backup*</exclude>
-              <exclude>**/.darcs-temp-mail</exclude>
-              <exclude>**/target/**</exclude>
-              <exclude>**/test-output/**</exclude>
-              <exclude>**/release.properties</exclude>
-              <exclude>**/dependency-reduced-pom.xml</exclude>
-              <exclude>**/cobertura.ser</exclude>
-              <exclude>**/.clover/**</exclude>
-              <exclude>**/.classpath</exclude>
-              <exclude>**/.project</exclude>
-              <exclude>**/.settings/**</exclude>
-              <exclude>**/*.iml</exclude>
-              <exclude>**/*.ipr</exclude>
-              <exclude>**/*.iws</exclude>
-              <exclude>**/.idea/**</exclude>
-              <exclude>**/MANIFEST.MF</exclude>
-              <exclude>**/*.jpg</exclude>
-              <exclude>**/*.png</exclude>
-              <exclude>**/*.gif</exclude>
-              <exclude>**/*.ico</exclude>
-              <exclude>**/*.bmp</exclude>
-              <exclude>**/*.tiff</exclude>
-              <exclude>**/*.tif</exclude>
-              <exclude>**/*.cr2</exclude>
-              <exclude>**/*.xcf</exclude>
-              <exclude>**/*.class</exclude>
-              <exclude>**/*.exe</exclude>
-              <exclude>**/*.md5</exclude>
-              <exclude>**/*.sha1</exclude>
-              <exclude>**/*.jar</exclude>
-              <exclude>**/*.zip</exclude>
-              <exclude>**/*.rar</exclude>
-              <exclude>**/*.tar</exclude>
-              <exclude>**/*.tar.gz</exclude>
-              <exclude>**/*.tar.bz2</exclude>
-              <exclude>**/*.gz</exclude>
-              <exclude>**/*.xls</exclude>
-              <exclude>**/META-INF/services/**</exclude>
-              <exclude>**/*.pem</exclude>
-            </excludes>
           </configuration>
         </plugin>
         <plugin>
@@ -1325,28 +1247,21 @@
           </plugin>
           <!-- Creating current year element -->
           <plugin>
-            <groupId>org.codehaus.gmaven</groupId>
-            <artifactId>gmaven-plugin</artifactId>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
             <executions>
               <execution>
                 <id>compute-year</id>
-                <phase>validate</phase>
                 <goals>
-                  <goal>execute</goal>
+                  <goal>timestamp-property</goal>
                 </goals>
                 <configuration>
-                  <source>project.properties['currentYear'] = Year.compute()</source>
+                  <locale>en,US</locale>
+                  <name>currentYear</name>
+                  <pattern>yyyy</pattern>
                 </configuration>
               </execution>
             </executions>
-            <!-- Add a dependency since to find the year.groovy file -->
-            <dependencies>
-              <dependency>
-                <groupId>org.exoplatform.resources</groupId>
-                <artifactId>exo-lgpl-license-resource-bundle</artifactId>
-                <version>${version.exo-lgpl-license-resource-bundle}</version>
-              </dependency>
-            </dependencies>
           </plugin>
           <!-- Adding header to file -->
           <plugin>
@@ -1635,28 +1550,21 @@
         <plugins>
           <!-- Creating current year element -->
           <plugin>
-            <groupId>org.codehaus.gmaven</groupId>
-            <artifactId>gmaven-plugin</artifactId>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
             <executions>
               <execution>
                 <id>compute-year</id>
-                <phase>validate</phase>
                 <goals>
-                  <goal>execute</goal>
+                  <goal>timestamp-property</goal>
                 </goals>
                 <configuration>
-                  <source>project.properties['currentYear'] = Year.compute()</source>
+                  <locale>en,US</locale>
+                  <name>currentYear</name>
+                  <pattern>yyyy</pattern>
                 </configuration>
               </execution>
             </executions>
-            <!-- Add a dependency since to find the year.groovy file -->
-            <dependencies>
-              <dependency>
-                <groupId>org.exoplatform.resources</groupId>
-                <artifactId>exo-lgpl-license-resource-bundle</artifactId>
-                <version>${version.exo-lgpl-license-resource-bundle}</version>
-              </dependency>
-            </dependencies>
           </plugin>
           <!-- Adding header to file -->
           <plugin>
@@ -1682,28 +1590,21 @@
         <plugins>
           <!-- Creating current year element -->
           <plugin>
-            <groupId>org.codehaus.gmaven</groupId>
-            <artifactId>gmaven-plugin</artifactId>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
             <executions>
               <execution>
                 <id>compute-year</id>
-                <phase>validate</phase>
                 <goals>
-                  <goal>execute</goal>
+                  <goal>timestamp-property</goal>
                 </goals>
                 <configuration>
-                  <source>project.properties['currentYear'] = Year.compute()</source>
+                  <locale>en,US</locale>
+                  <name>currentYear</name>
+                  <pattern>yyyy</pattern>
                 </configuration>
               </execution>
             </executions>
-            <!-- Add a dependency since to find the year.groovy file -->
-            <dependencies>
-              <dependency>
-                <groupId>org.exoplatform.resources</groupId>
-                <artifactId>exo-lgpl-license-resource-bundle</artifactId>
-                <version>${version.exo-lgpl-license-resource-bundle}</version>
-              </dependency>
-            </dependencies>
           </plugin>
           <!-- Adding header to file -->
           <plugin>
