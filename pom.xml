@@ -125,7 +125,7 @@
     <version.duplicate-finder.plugin>1.0.7</version.duplicate-finder.plugin>
     <version.eclipse.plugin>2.9</version.eclipse.plugin>
     <version.ear.plugin>2.9</version.ear.plugin>
-    <version.ejb.plugin>2.3</version.ejb.plugin>
+    <version.ejb.plugin>2.4</version.ejb.plugin>
     <version.enforcer.plugin>1.3.1</version.enforcer.plugin>
     <version.exec.plugin>1.3</version.exec.plugin>
     <version.exobuild.plugin>1.2.2</version.exobuild.plugin>
@@ -440,14 +440,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-ejb-plugin</artifactId>
           <version>${version.ejb.plugin}</version>
-          <dependencies>
-            <!-- PAR-193 : To be removed when the plugin will have a version of plexus-utils >= 3.0.7 -->
-            <dependency>
-              <groupId>org.codehaus.plexus</groupId>
-              <artifactId>plexus-utils</artifactId>
-              <version>${version.plexus-utils}</version>
-            </dependency>
-          </dependencies>
           <configuration>
             <archive>
               <manifest>
