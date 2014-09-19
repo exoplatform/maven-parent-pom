@@ -127,7 +127,7 @@
     <version.ear.plugin>2.9.1</version.ear.plugin>
     <version.ejb.plugin>2.4</version.ejb.plugin>
     <version.enforcer.plugin>1.3.1</version.enforcer.plugin>
-    <version.exec.plugin>1.3</version.exec.plugin>
+    <version.exec.plugin>1.3.2</version.exec.plugin>
     <version.exobuild.plugin>1.2.2</version.exobuild.plugin>
     <version.exopc.plugin>1.0.5</version.exopc.plugin>
     <version.failsafe.plugin>${version.surefire.plugin}</version.failsafe.plugin>
