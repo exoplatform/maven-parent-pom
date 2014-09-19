@@ -141,7 +141,7 @@
     <version.install.plugin>2.5.2</version.install.plugin>
     <version.invoker.plugin>1.9</version.invoker.plugin>
     <version.jacoco.plugin>0.7.1.201405082137</version.jacoco.plugin>
-    <version.jar.plugin>2.4</version.jar.plugin>
+    <version.jar.plugin>2.5</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
     <version.javadoc.plugin>2.9.1</version.javadoc.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
