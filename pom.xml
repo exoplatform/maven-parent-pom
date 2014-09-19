@@ -199,8 +199,8 @@
     <!-- maven-clirr-plugin -->
     <textOutputFile>${project.build.directory}/clirr-report.txt</textOutputFile>
     <!-- maven-compiler-plugin -->
-    <maven.compiler.target>1.6</maven.compiler.target>
-    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.optimize>true</maven.compiler.optimize>
@@ -211,8 +211,8 @@
     <jdk.min.version>${maven.compiler.source}</jdk.min.version>
     <!-- To configure animal-sniffer to check API compat -->
     <animal-sniffer.signature.groupId>org.codehaus.mojo.signature</animal-sniffer.signature.groupId>
-    <animal-sniffer.signature.artifactId>java16</animal-sniffer.signature.artifactId>
-    <animal-sniffer.signature.version>1.1</animal-sniffer.signature.version>
+    <animal-sniffer.signature.artifactId>java17</animal-sniffer.signature.artifactId>
+    <animal-sniffer.signature.version>1.0</animal-sniffer.signature.version>
     <!-- Extra enforcer rules -->
     <extra-enforcer-rules.version>1.0-beta-2</extra-enforcer-rules.version>
     <!-- gmaven-plugin -->
