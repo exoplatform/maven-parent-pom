@@ -119,7 +119,7 @@
     <version.compiler.plugin>3.1</version.compiler.plugin>
     <version.copy.plugin>0.2.5</version.copy.plugin>
     <version.dependency.plugin>2.8</version.dependency.plugin>
-    <version.deploy.plugin>2.8.1</version.deploy.plugin>
+    <version.deploy.plugin>2.8.2</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
     <version.docbkx.plugin>2.0.15</version.docbkx.plugin>
     <version.duplicate-finder.plugin>1.0.7</version.duplicate-finder.plugin>
