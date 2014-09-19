@@ -122,7 +122,7 @@
     <version.deploy.plugin>2.8.2</version.deploy.plugin>
     <version.docck.plugin>1.0</version.docck.plugin>
     <version.docbkx.plugin>2.0.15</version.docbkx.plugin>
-    <version.duplicate-finder.plugin>1.0.7</version.duplicate-finder.plugin>
+    <version.duplicate-finder.plugin>1.0.8</version.duplicate-finder.plugin>
     <version.eclipse.plugin>2.9</version.eclipse.plugin>
     <version.ear.plugin>2.9.1</version.ear.plugin>
     <version.ejb.plugin>2.4</version.ejb.plugin>
