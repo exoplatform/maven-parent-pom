@@ -183,7 +183,7 @@
     <!-- Others versions -->
     <!-- *************** -->
     <version.animal-sniffer.enforcer-rule>1.11</version.animal-sniffer.enforcer-rule>
-    <version.wagon>2.6</version.wagon>
+    <version.wagon>2.7</version.wagon>
     <!-- PAR-193 : performances boost workaround -->
     <version.plexus-utils>3.0.17</version.plexus-utils>
     <!-- PAR-155 : Produce project sources package distribution -->
@@ -271,8 +271,7 @@
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-webdav-jackrabbit</artifactId>
-        <!-- 2.5 doesn't work : java.lang.ClassNotFoundException: org.apache.commons.logging.LogFactory -->
-        <version>2.4</version>
+        <version>${version.wagon}</version>
       </extension>
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
