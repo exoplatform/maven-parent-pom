@@ -1327,7 +1327,7 @@
               <properties>
                 <property>
                   <name>listener</name>
-                  <value>org.sonar.java.jacoco.JUnitListener</value>
+                  <value>org.sonar.java.jacoco.TestNGListener</value>
                 </property>
               </properties>
             </configuration>
@@ -1340,7 +1340,7 @@
               <properties>
                 <property>
                   <name>listener</name>
-                  <value>org.sonar.java.jacoco.JUnitListener</value>
+                  <value>org.sonar.java.jacoco.TestNGListener</value>
                 </property>
               </properties>
               <!-- Let's put failsafe reports with surefire to have access to tests failures/success reports in sonar -->
