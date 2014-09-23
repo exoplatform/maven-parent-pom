@@ -265,6 +265,10 @@
     <sonar.jacoco.reportPath>${jacoco.outputDir}/jacoco.exec</sonar.jacoco.reportPath>
     <!-- Tells Sonar where the Jacoco coverage result file is located for Integration Tests -->
     <sonar.jacoco.itReportPath>${jacoco.outputDir}/jacoco-it.exec</sonar.jacoco.itReportPath>
+    <!-- The listener used to compute coverage per test -->
+    <!-- JUnit : org.sonar.java.jacoco.JUnitListener -->
+    <!-- TestNG : org.sonar.java.jacoco.TestNGListener -->
+    <jacoco.listener>org.sonar.java.jacoco.JUnitListener</jacoco.listener>
   </properties>
   <build>
     <extensions>
@@ -1327,7 +1331,7 @@
               <properties>
                 <property>
                   <name>listener</name>
-                  <value>org.sonar.java.jacoco.TestNGListener</value>
+                  <value>${jacoco.listener}</value>
                 </property>
               </properties>
             </configuration>
@@ -1340,7 +1344,7 @@
               <properties>
                 <property>
                   <name>listener</name>
-                  <value>org.sonar.java.jacoco.TestNGListener</value>
+                  <value>${jacoco.listener}</value>
                 </property>
               </properties>
               <!-- Let's put failsafe reports with surefire to have access to tests failures/success reports in sonar -->
