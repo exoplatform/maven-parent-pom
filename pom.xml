@@ -209,6 +209,7 @@
     <!-- maven-enforcer-plugin -->
     <maven.min.version>3.0.5</maven.min.version>
     <jdk.min.version>${maven.compiler.source}</jdk.min.version>
+    <exo.release.enforce.requirePluginVersions.banSnapshots>true</exo.release.enforce.requirePluginVersions.banSnapshots>
     <!-- To configure animal-sniffer to check API compat -->
     <animal-sniffer.signature.groupId>org.codehaus.mojo.signature</animal-sniffer.signature.groupId>
     <animal-sniffer.signature.artifactId>java17</animal-sniffer.signature.artifactId>
@@ -1130,8 +1131,7 @@
                       <message>Best practice is to always define plugin versions! Plugins must be released released (no SNAPSHOT) and without using keywords RELEASE or LATEST!</message>
                       <banLatest>true</banLatest>
                       <banRelease>true</banRelease>
-                      <banSnapshots>true</banSnapshots>
-                      <phases>deploy,site</phases>
+                      <banSnapshots>${exo.release.enforce.requirePluginVersions.banSnapshots}</banSnapshots>
                     </requirePluginVersions>
                   </rules>
                 </configuration>
