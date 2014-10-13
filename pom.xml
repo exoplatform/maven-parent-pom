@@ -215,7 +215,7 @@
     <animal-sniffer.signature.artifactId>java17</animal-sniffer.signature.artifactId>
     <animal-sniffer.signature.version>1.0</animal-sniffer.signature.version>
     <!-- Extra enforcer rules -->
-    <extra-enforcer-rules.version>1.0-beta-2</extra-enforcer-rules.version>
+    <extra-enforcer-rules.version>1.0-beta-3</extra-enforcer-rules.version>
     <!-- gmaven-plugin -->
     <gmaven-plugin.providerSelection>2.0</gmaven-plugin.providerSelection>
     <!-- maven-gpg-plugin -->
