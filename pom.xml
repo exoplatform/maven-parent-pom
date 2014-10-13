@@ -143,7 +143,7 @@
     <version.jacoco.plugin>0.7.2.201409121644</version.jacoco.plugin>
     <version.jar.plugin>2.5</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
-    <version.javadoc.plugin>2.9.1</version.javadoc.plugin>
+    <version.javadoc.plugin>2.10.1</version.javadoc.plugin>
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.jaxb2.plugin>1.6</version.jaxb2.plugin>
     <version.jdepend.plugin>2.0</version.jdepend.plugin>
