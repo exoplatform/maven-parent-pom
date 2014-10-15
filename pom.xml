@@ -229,6 +229,8 @@
     <downloadSources>true</downloadSources>
     <!--  maven-javadoc-plugin -->
     <detectOfflineLinks>false</detectOfflineLinks>
+    <maven.javadoc.skip>false</maven.javadoc.skip>
+    <maven.javadoc.jar.skip>${maven.javadoc.skip}</maven.javadoc.jar.skip>
     <!-- too slow : http://jira.codehaus.org/browse/MJAVADOC-268 -->
     <quiet>true</quiet>
     <!-- maven-pmd-plugin -->
