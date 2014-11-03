@@ -42,6 +42,12 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <developers>
+    <developer>
+      <id>exoswf</id>
+      <name>eXo Platform SAS</name>
+    </developer>
+  </developers>
   <prerequisites>
     <maven>${maven.min.version}</maven>
   </prerequisites>
