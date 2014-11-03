@@ -324,12 +324,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
           <version>${version.assembly.plugin}</version>
-          <configuration>
-            <!-- Perfs improvements - PAR-191 -->
-            <useJvmChmod>true</useJvmChmod>
-            <!-- Allow to activate/deactivate the recompression of zip files -->
-            <recompressZippedFiles>${maven.assembly.recompressZippedFiles}</recompressZippedFiles>
-          </configuration>
           <!-- Workaround for http://jira.codehaus.org/browse/MASSEMBLY-722 the time to upgrade to 2.5.1 -->
           <dependencies>
             <dependency>
@@ -343,6 +337,12 @@
               <version>2.3.3</version>
             </dependency>
           </dependencies>
+          <configuration>
+            <!-- Perfs improvements - PAR-191 -->
+            <useJvmChmod>true</useJvmChmod>
+            <!-- Allow to activate/deactivate the recompression of zip files -->
+            <recompressZippedFiles>${maven.assembly.recompressZippedFiles}</recompressZippedFiles>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -1555,13 +1555,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <configuration>
-              <defaultAuthor>${project.organization.name}</defaultAuthor>
-              <defaultVersion></defaultVersion>
-              <fixTags>author,since,param,return,throws,link</fixTags>
-              <level>private</level>
-              <force>true</force>
-            </configuration>
             <dependencies>
               <dependency>
                 <groupId>org.codehaus.mojo</groupId>
@@ -1569,6 +1562,13 @@
                 <version>${version.clirr.plugin}</version>
               </dependency>
             </dependencies>
+            <configuration>
+              <defaultAuthor>${project.organization.name}</defaultAuthor>
+              <defaultVersion />
+              <fixTags>author,since,param,return,throws,link</fixTags>
+              <level>private</level>
+              <force>true</force>
+            </configuration>
           </plugin>
         </plugins>
       </build>
