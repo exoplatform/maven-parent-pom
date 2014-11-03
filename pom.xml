@@ -144,7 +144,7 @@
     <version.jar.plugin>2.5</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
     <version.javadoc.plugin>2.10.1</version.javadoc.plugin>
-    <version.javancss.plugin>2.0</version.javancss.plugin>
+    <version.javancss.plugin>2.1</version.javancss.plugin>
     <version.jaxb2.plugin>1.6</version.jaxb2.plugin>
     <version.jdepend.plugin>2.0</version.jdepend.plugin>
     <!-- PAR-222 : jdocbook 2.3.6+ has a perf issue. See MPJDOCBOOK-84 -->
