@@ -97,7 +97,6 @@
     <sonar.host.url>https://sonar.exoplatform.org/</sonar.host.url>
     <!-- **************************************** -->
     <!-- Repositories URLs                        -->
-    <!-- Using DAV for large artifacts - PAR-156  -->
     <!-- **************************************** -->
     <exo.releases.repo.url>https://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
     <exo.snapshots.repo.url>https://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
