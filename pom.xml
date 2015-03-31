@@ -1145,6 +1145,7 @@
                 <goals>
                   <goal>enforce</goal>
                 </goals>
+                <phase>process-classes</phase>
                 <configuration>
                   <rules>
                     <checkSignatureRule implementation="org.codehaus.mojo.animal_sniffer.enforcer.CheckSignatureRule">
