@@ -151,6 +151,8 @@
     <version.javadoc.plugin>2.10.1</version.javadoc.plugin>
     <version.javancss.plugin>2.1</version.javancss.plugin>
     <version.jaxb2.plugin>1.6</version.jaxb2.plugin>
+    <!-- PAR-362: weaves .class files with AspectJ aspects available in classpath (binary weaving) -->
+    <version.jcabi.plugin>0.13.2</version.jcabi.plugin>
     <version.jdepend.plugin>2.0</version.jdepend.plugin>
     <!-- PAR-222 : jdocbook 2.3.6+ has a perf issue. See MPJDOCBOOK-84 -->
     <version.jdocbook.plugin>2.3.5</version.jdocbook.plugin>
@@ -654,6 +656,33 @@
           <version>${version.jaxb2.plugin}</version>
         </plugin>
         <plugin>
+          <groupId>com.jcabi</groupId>
+          <artifactId>jcabi-maven-plugin</artifactId>
+          <version>${version.jcabi.plugin}</version>
+          <executions>
+            <execution>
+              <id>weave-classes</id>
+              <phase>process-classes</phase>
+              <goals>
+                <goal>ajc</goal>
+              </goals>
+              <configuration>
+                <classesDirectory>${project.build.outputDirectory}</classesDirectory>
+              </configuration>
+            </execution>
+            <execution>
+              <id>weave-test-classes</id>
+              <phase>process-test-classes</phase>
+              <goals>
+                <goal>ajc</goal>
+              </goals>
+              <configuration>
+                <classesDirectory>${project.build.testOutputDirectory}</classesDirectory>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>jdepend-maven-plugin</artifactId>
           <version>${version.jdepend.plugin}</version>
@@ -1142,10 +1171,10 @@
               </execution>
               <execution>
                 <id>check-java-compat</id>
+                <phase>process-classes</phase>
                 <goals>
                   <goal>enforce</goal>
                 </goals>
-                <phase>process-classes</phase>
                 <configuration>
                   <rules>
                     <checkSignatureRule implementation="org.codehaus.mojo.animal_sniffer.enforcer.CheckSignatureRule">
