@@ -1171,7 +1171,9 @@
               </execution>
               <execution>
                 <id>check-java-compat</id>
+                <!-- PAR-361: Rollback, because CheckSignatureRule always failed for 3rd party libraries
                 <phase>process-classes</phase>
+                -->
                 <goals>
                   <goal>enforce</goal>
                 </goals>
