@@ -643,6 +643,13 @@
                 <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
               </manifestEntries>
             </archive>
+            <tags>
+              <tag>
+                <name>LevelAPI</name>
+                <placement>a</placement>
+                <head>eXo level API</head>
+              </tag>
+            </tags>
           </configuration>
         </plugin>
         <plugin>
