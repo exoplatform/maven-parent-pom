@@ -649,6 +649,36 @@
                 <placement>a</placement>
                 <head>eXo level API</head>
               </tag>
+              <tag>
+                <name>anchor</name>
+                <placement>a</placement>
+                <head>eXo anchor for generated doc on REST API</head>
+              </tag>
+              <tag>
+                <name>request</name>
+                <placement>a</placement>
+                <head>eXo anchor for generated doc on REST API</head>
+              </tag>
+              <tag>
+                <name>response</name>
+                <placement>a</placement>
+                <head>eXo response for generated doc on REST API</head>
+              </tag>
+              <tag>
+                <name>format</name>
+                <placement>a</placement>
+                <head>eXo format for generated doc on REST API</head>
+              </tag>
+              <tag>
+                <name>authentication</name>
+                <placement>a</placement>
+                <head>eXo authentication for generated doc on REST API</head>
+              </tag>
+              <tag>
+                <name>notificationId</name>
+                <placement>a</placement>
+                <head>eXo notificationId for generated doc on REST API</head>
+              </tag>
             </tags>
           </configuration>
         </plugin>
