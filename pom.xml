@@ -189,7 +189,7 @@
     <!-- *************** -->
     <!-- Others versions -->
     <!-- *************** -->
-    <version.animal-sniffer.enforcer-rule>1.11</version.animal-sniffer.enforcer-rule>
+    <version.animal-sniffer.enforcer-rule>1.15</version.animal-sniffer.enforcer-rule>
     <version.wagon>2.7</version.wagon>
     <!-- PAR-193 : performances boost workaround -->
     <version.plexus-utils>3.0.18</version.plexus-utils>
