@@ -119,7 +119,7 @@
     <version.cargo.plugin>1.4.10</version.cargo.plugin>
     <version.clean.plugin>3.0.0</version.clean.plugin>
     <version.changes.plugin>2.11</version.changes.plugin>
-    <version.checkstyle.plugin>2.13</version.checkstyle.plugin>
+    <version.checkstyle.plugin>2.17</version.checkstyle.plugin>
     <version.clirr.plugin>2.6.1</version.clirr.plugin>
     <version.compiler.plugin>3.5</version.compiler.plugin>
     <version.copy.plugin>0.2.5</version.copy.plugin>
