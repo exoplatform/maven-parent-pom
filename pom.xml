@@ -148,7 +148,7 @@
     <version.jacoco.plugin>0.7.2.201409121644</version.jacoco.plugin>
     <version.jar.plugin>2.6</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
-    <version.javadoc.plugin>2.10.1</version.javadoc.plugin>
+    <version.javadoc.plugin>2.10.3</version.javadoc.plugin>
     <version.javancss.plugin>2.1</version.javancss.plugin>
     <version.jaxb2.plugin>2.2</version.jaxb2.plugin>
     <!-- PAR-362: weaves .class files with AspectJ aspects available in classpath (binary weaving) -->
