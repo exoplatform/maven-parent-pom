@@ -144,7 +144,7 @@
     <version.gwt.plugin>2.6.1</version.gwt.plugin>
     <version.idea.plugin>2.2.1</version.idea.plugin>
     <version.install.plugin>2.5.2</version.install.plugin>
-    <version.invoker.plugin>1.9</version.invoker.plugin>
+    <version.invoker.plugin>2.0.0</version.invoker.plugin>
     <version.jacoco.plugin>0.7.6.201602180812</version.jacoco.plugin>
     <version.jar.plugin>2.6</version.jar.plugin>
     <version.javacc.plugin>2.6</version.javacc.plugin>
