@@ -110,7 +110,7 @@
     <!-- Plugins versions -->
     <!-- **************** -->
     <version.android.plugin>3.8.2</version.android.plugin>
-    <version.antrun.plugin>1.7</version.antrun.plugin>
+    <version.antrun.plugin>1.8</version.antrun.plugin>
     <version.archetype.plugin>2.2</version.archetype.plugin>
     <version.aspectj.plugin>1.7</version.aspectj.plugin>
     <version.assembly.plugin>2.5</version.assembly.plugin>
