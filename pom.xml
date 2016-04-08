@@ -169,7 +169,7 @@
     <version.plugin.plugin>3.4</version.plugin.plugin>
     <version.pmd.plugin>3.6</version.pmd.plugin>
     <version.rar.plugin>2.4</version.rar.plugin>
-    <version.release.plugin>2.5.1</version.release.plugin>
+    <version.release.plugin>2.5.3</version.release.plugin>
     <version.remote-resources.plugin.version>1.5</version.remote-resources.plugin.version>
     <version.resources.plugin>2.7</version.resources.plugin>
     <version.selenium.plugin>2.3</version.selenium.plugin>
