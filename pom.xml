@@ -156,7 +156,7 @@
     <version.jdepend.plugin>2.0</version.jdepend.plugin>
     <!-- PAR-222 : jdocbook 2.3.6+ has a perf issue. See MPJDOCBOOK-84 -->
     <version.jdocbook.plugin>2.3.5</version.jdocbook.plugin>
-    <version.jibx.plugin>1.2.5</version.jibx.plugin>
+    <version.jibx.plugin>1.2.6</version.jibx.plugin>
     <version.jmeter.plugin>1.10.1</version.jmeter.plugin>
     <version.jodconverter.plugin>2.2.1</version.jodconverter.plugin>
     <version.jstools.plugin>0.7</version.jstools.plugin>
