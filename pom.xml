@@ -138,7 +138,7 @@
     <version.failsafe.plugin>${version.surefire.plugin}</version.failsafe.plugin>
     <version.findbugs.plugin>3.0.0</version.findbugs.plugin>
     <version.gmaven.plugin>1.5</version.gmaven.plugin>
-    <version.gmavenplus.plugin>1.2</version.gmavenplus.plugin>
+    <version.gmavenplus.plugin>1.5</version.gmavenplus.plugin>
     <version.gpg.plugin>1.6</version.gpg.plugin>
     <!-- Must be kept in sync with maven-depmgt-pom GWT version -->
     <version.gwt.plugin>2.6.1</version.gwt.plugin>
