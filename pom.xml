@@ -127,7 +127,7 @@
     <version.docck.plugin>1.1</version.docck.plugin>
     <version.docbkx.plugin>2.0.16</version.docbkx.plugin>
     <version.duplicate-finder.plugin>1.0.9</version.duplicate-finder.plugin>
-    <version.eclipse.plugin>2.9</version.eclipse.plugin>
+    <version.eclipse.plugin>2.10</version.eclipse.plugin>
     <version.ear.plugin>2.10.1</version.ear.plugin>
     <version.ejb.plugin>2.5.1</version.ejb.plugin>
     <version.enforcer.plugin>1.4.1</version.enforcer.plugin>
@@ -434,14 +434,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-eclipse-plugin</artifactId>
           <version>${version.eclipse.plugin}</version>
-          <dependencies>
-            <!-- PAR-193 : To be removed when the plugin will have a version of plexus-utils >= 3.0.7 -->
-            <dependency>
-              <groupId>org.codehaus.plexus</groupId>
-              <artifactId>plexus-utils</artifactId>
-              <version>${version.plexus-utils}</version>
-            </dependency>
-          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
