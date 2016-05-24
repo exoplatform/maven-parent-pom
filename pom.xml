@@ -109,7 +109,6 @@
     <!-- **************** -->
     <!-- Plugins versions -->
     <!-- **************** -->
-    <version.android.plugin>3.8.2</version.android.plugin>
     <version.antrun.plugin>1.8</version.antrun.plugin>
     <version.archetype.plugin>2.4</version.archetype.plugin>
     <version.aspectj.plugin>1.8</version.aspectj.plugin>
@@ -301,11 +300,6 @@
     <pluginManagement>
       <!-- All plugins ordered by shortname (antrun, assembly ...) -->
       <plugins>
-        <plugin>
-          <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-          <artifactId>android-maven-plugin</artifactId>
-          <version>${version.android.plugin}</version>
-        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
