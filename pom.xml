@@ -119,7 +119,8 @@
     <version.clean.plugin>3.0.0</version.clean.plugin>
     <version.changes.plugin>2.11</version.changes.plugin>
     <version.checkstyle.plugin>2.17</version.checkstyle.plugin>
-    <version.clirr.plugin>2.6.1</version.clirr.plugin>
+    <!-- PAR-398: Workaround to use it with Java 8 (To remove when 2.8 is released) -->
+    <version.clirr.plugin>2.8-eXo01</version.clirr.plugin>
     <version.compiler.plugin>3.5.1</version.compiler.plugin>
     <version.copy.plugin>0.2.5</version.copy.plugin>
     <version.dependency.plugin>2.10</version.dependency.plugin>
@@ -164,6 +165,9 @@
     <version.license.plugin>1.8</version.license.plugin>
     <version.mycila-license.plugin>2.11</version.mycila-license.plugin>
     <version.project-info-reports.plugin>2.9</version.project-info-reports.plugin>
+    <!-- PAR-398: Workaround to use clirr plugin with Java 8 (To remove when clirr 2.8 is released) -->
+    <version.project-info-reports-shade.plugin>1.2</version.project-info-reports-shade.plugin>
+    <version.project-info-reports-bcel-findbugs.plugin>6.0</version.project-info-reports-bcel-findbugs.plugin>
     <version.plexus.plugin>1.3.8</version.plexus.plugin>
     <version.plugin.plugin>3.4</version.plugin.plugin>
     <version.pmd.plugin>3.6</version.pmd.plugin>
@@ -807,6 +811,28 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-remote-resources-plugin</artifactId>
           <version>${version.remote-resources.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.shared</groupId>
+              <artifactId>maven-shared-jar</artifactId>
+              <version>${version.project-info-reports-shade.plugin}</version>
+              <exclusions>
+                <exclusion>
+                  <artifactId>bcel</artifactId>
+                  <groupId>org.apache.bcel</groupId>
+                </exclusion>
+              </exclusions>
+            </dependency>
+            <dependency>
+              <groupId>com.google.code.findbugs</groupId>
+              <artifactId>bcel-findbugs</artifactId>
+              <version>${version.project-info-reports-bcel-findbugs.plugin}</version>
+            </dependency>
+          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
