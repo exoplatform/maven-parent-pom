@@ -25,7 +25,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.exoplatform</groupId>
   <artifactId>maven-parent-pom</artifactId>
-  <version>16-SNAPSHOT</version>
+  <version>17-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: Parent POM</name>
   <description>Provides default project configuration for eXo projects</description>
