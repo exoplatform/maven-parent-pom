@@ -25,7 +25,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.exoplatform</groupId>
   <artifactId>maven-parent-pom</artifactId>
-  <version>17-SNAPSHOT</version>
+  <version>17-M01</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: Parent POM</name>
   <description>Provides default project configuration for eXo projects</description>
@@ -54,7 +54,7 @@
   <scm>
     <connection>scm:git:git://github.com/exoplatform/maven-parent-pom.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/maven-parent-pom.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>17-M01</tag>
     <url>https://fisheye.exoplatform.org/browse/maven-parent-pom</url>
   </scm>
   <issueManagement>
