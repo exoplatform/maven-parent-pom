@@ -189,6 +189,7 @@
     <version.wikbook.plugin>0.9.45</version.wikbook.plugin>
     <version.xml.plugin>1.0</version.xml.plugin>
     <version.yuicompressor.plugin>0.7.1</version.yuicompressor.plugin>
+    <version.owasp.dependency-check-maven.plugin>3.1.2</version.owasp.dependency-check-maven.plugin>
     <!-- *************** -->
     <!-- Others versions -->
     <!-- *************** -->
@@ -1105,6 +1106,19 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>${version.surefire.plugin}</version>
+      </plugin>
+      <plugin>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>${version.owasp.dependency-check-maven.plugin}</version>
+        <reportSets>
+          <reportSet>
+            <id>aggregate</id>
+            <reports>
+              <report>aggregate</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
     </plugins>
   </reporting>
