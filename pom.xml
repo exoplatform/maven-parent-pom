@@ -283,6 +283,9 @@
     <!-- JUnit : org.sonar.java.jacoco.JUnitListener -->
     <!-- TestNG : org.sonar.java.jacoco.TestNGListener -->
     <jacoco.listener>org.sonar.java.jacoco.JUnitListener</jacoco.listener>
+    <!-- Minimal test coverage ratio to reach to make the build pass (from 0.0 to 1.0)
+         We intentionally set it to 100% by default to force all projects to define their own ratio -->
+    <exo.test.coverage.ratio>1.0</exo.test.coverage.ratio>
   </properties>
   <build>
     <extensions>
@@ -1464,6 +1467,54 @@
                 <configuration>
                   <destFile>${sonar.jacoco.itReportPath}</destFile>
                   <append>true</append>
+                </configuration>
+              </execution>
+              <execution>
+                <id>check-coverage</id>
+                <goals>
+                  <goal>check</goal>
+                </goals>
+                <configuration>
+                  <rules>
+                    <rule implementation="org.jacoco.maven.RuleConfiguration">
+                      <element>BUNDLE</element>
+                      <limits>
+                        <limit implementation="org.jacoco.report.check.Limit">
+                          <counter>INSTRUCTION</counter>
+                          <value>COVEREDRATIO</value>
+                          <minimum>${exo.test.coverage.ratio}</minimum>
+                        </limit>
+                      </limits>
+                    </rule>
+                  </rules>
+                </configuration>
+              </execution>
+              <!-- Ensures that the code coverage report for unit tests is created after unit tests have been run. -->
+              <execution>
+                <id>post-unit-test</id>
+                <phase>test</phase>
+                <goals>
+                  <goal>report</goal>
+                </goals>
+                <configuration>
+                  <!-- Sets the path to the file which contains the execution data. -->
+                  <dataFile>${sonar.jacoco.reportPath}</dataFile>
+                  <!-- Sets the output directory for the code coverage report. -->
+                  <outputDirectory>${project.reporting.outputDirectory}/test-coverage-ut</outputDirectory>
+                </configuration>
+              </execution>
+              <!-- Ensures that the code coverage report for integration tests after integration tests have been run. -->
+              <execution>
+                <id>post-integration-test</id>
+                <phase>post-integration-test</phase>
+                <goals>
+                  <goal>report</goal>
+                </goals>
+                <configuration>
+                  <!-- Sets the path to the file which contains the execution data. -->
+                  <dataFile>${sonar.jacoco.itReportPath}</dataFile>
+                  <!-- Sets the output directory for the code coverage report. -->
+                  <outputDirectory>${project.reporting.outputDirectory}/test-coverage-it</outputDirectory>
                 </configuration>
               </execution>
             </executions>
