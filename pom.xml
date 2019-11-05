@@ -137,6 +137,7 @@
     <version.exopc.plugin>1.0.5</version.exopc.plugin>
     <version.failsafe.plugin>${version.surefire.plugin}</version.failsafe.plugin>
     <version.findbugs.plugin>3.0.3</version.findbugs.plugin>
+    <version.gitextension.plugin>4.4.3</version.gitextension.plugin>
     <version.gmaven.plugin>1.5</version.gmaven.plugin>
     <version.gmavenplus.plugin>1.5</version.gmavenplus.plugin>
     <version.gpg.plugin>1.6</version.gpg.plugin>
@@ -516,6 +517,11 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>findbugs-maven-plugin</artifactId>
           <version>${version.findbugs.plugin}</version>
+        </plugin>
+        <plugin>
+          <groupId>me.qoomon</groupId>
+          <artifactId>maven-git-versioning-extension</artifactId>
+          <version>${version.gitextension.plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.gmaven</groupId>
